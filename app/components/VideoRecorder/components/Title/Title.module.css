@@ -1,0 +1,47 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.title {
+  font-size: 24px;
+  color: #fff;
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.1),
+    -1px 1px 0 rgba(0, 0, 0, 0.1),
+    1px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px -1px 0 rgba(0, 0, 0, 0.1),
+    0px 1px 0 rgba(0, 0, 0, 0.1),
+    0px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px 0px 0 rgba(0, 0, 0, 0.1),
+    1px 0px 0 rgba(0, 0, 0, 0.1),
+    2px 2px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 0 rgba(0, 0, 0, 0.1),
+    2px -2px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 0 rgba(0, 0, 0, 0.1),
+    0px 2px 0 rgba(0, 0, 0, 0.1),
+    0px -2px 0 rgba(0, 0, 0, 0.1),
+    -2px 0px 0 rgba(0, 0, 0, 0.1),
+    2px 0px 0 rgba(0, 0, 0, 0.1),
+    1px 2px 0 rgba(0, 0, 0, 0.1),
+    -1px 2px 0 rgba(0, 0, 0, 0.1),
+    1px -2px 0 rgba(0, 0, 0, 0.1),
+    -1px -2px 0 rgba(0, 0, 0, 0.1),
+    2px 1px 0 rgba(0, 0, 0, 0.1),
+    -2px 1px 0 rgba(0, 0, 0, 0.1),
+    2px -1px 0 rgba(0, 0, 0, 0.1),
+    -2px -1px 0 rgba(0, 0, 0, 0.1);
+
+  filter: drop-shadow(0 0 32px #000);
+}
+
+@media (min-width: 900px) {
+  .title {
+    font-size: 36px;
+  }
+}

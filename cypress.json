@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "projectId": "vk4633",
+  "chromeWebSecurity": false,
+  "numTestsKeptInMemory": 7,
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "nodeVersion": "bundled",
+  "component": {
+    "componentFolder": "app",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}",
+    "viewportHeight": 500,
+    "viewportWidth": 700
+  }
+}

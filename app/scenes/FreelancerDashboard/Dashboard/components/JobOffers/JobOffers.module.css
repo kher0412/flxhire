@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  min-height: 160px;
+  animation: container-appear 0.5s cubic-bezier(0.7, 0, 0, 1) backwards;
+  animation-delay: 0.2s;
+  transform-origin: top left;
+  margin-bottom: 24px;
+}
+
+@keyframes container-appear {
+  from {
+    transform: scale(0) translateY(-100px);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.placeholder {
+  position: relative;
+  min-height: 252px;
+}
+
+.placeholder-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.placeholder-title {
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+.placeholder-title,
+.placeholder-title * {
+  vertical-align: middle;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(63, 81, 181);
+}
+
+.avatar {
+  background: rgb(63, 81, 181) !important;
+  color: #fff !important;
+}

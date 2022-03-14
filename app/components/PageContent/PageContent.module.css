@@ -1,0 +1,16 @@
+.container {
+  flex-grow: 1;
+  position: relative !important;
+  z-index: 4 !important;
+  margin-bottom: 48px !important;
+  transition: max-width 0.4s ease;
+  min-height: 800px;
+  width: 100%;
+  min-width: 0;
+}
+
+@media (min-height: 600px) and (min-width: 1000px) {
+  .container {
+    margin-bottom: 96px !important;
+  }
+}

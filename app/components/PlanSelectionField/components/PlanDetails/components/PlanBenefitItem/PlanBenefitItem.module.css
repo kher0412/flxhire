@@ -1,0 +1,35 @@
+.container {
+  animation: container-appear 0.45s ease;
+  animation-fill-mode: backwards;
+}
+
+.container svg {
+  animation: svg-appear 0.45s ease;
+  animation-delay: inherit;
+  animation-fill-mode: backwards;
+}
+
+@keyframes container-appear {
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes svg-appear {
+  0% {
+    transform: scale(0.01);
+  }
+
+  60% {
+    transform: scale(1.34);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

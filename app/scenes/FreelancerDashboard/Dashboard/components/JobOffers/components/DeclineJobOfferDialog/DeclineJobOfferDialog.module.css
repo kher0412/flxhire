@@ -1,0 +1,9 @@
+.dialog {
+  .body {
+    .statement {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #333;
+    }
+  }
+}

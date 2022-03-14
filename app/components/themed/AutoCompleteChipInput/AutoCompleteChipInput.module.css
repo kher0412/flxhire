@@ -1,0 +1,76 @@
+.container {
+  margin: 0 !important;
+  border-radius: 6px;
+}
+
+.container :global(label:not(.MuiInputLabel-shrink)) {
+  transform: translate(14px, 8px) !important;
+}
+
+.container label {
+  color: #758699;
+}
+
+.container > div:first-of-type {
+  padding-top: 0;
+}
+
+.container > div:first-of-type {
+  min-height: 38px;
+}
+
+.container > div:first-of-type > div {
+  min-height: 38px;
+  padding-top: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.container > div:first-of-type > div fieldset {
+  border: 2px solid #E0E9F2;
+  border-radius: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.container > div:first-of-type:hover > div:not(.Mui-error) input:not(:focus) ~ fieldset {
+  border-color: #B5BCC3;
+}
+
+/* targets chip elements */
+.container > div:first-of-type > * > div:not(:nth-last-child(2)) {
+  position: relative;
+  overflow: hidden;
+  height: 24px !important;
+  margin: 7px 9px -5px -6px !important;
+}
+
+.container input {
+  transform: translateY(2px);
+  height: 14px !important;
+}
+
+.container > * > * > div:not(:nth-last-child(2)) svg {
+  margin-right: 2px;
+}
+
+.startAdornment,
+.endAdornment {
+  position: absolute !important;
+  top: 20px !important;
+}
+
+.startAdornment {
+  left: 9px !important
+}
+
+.endAdornment {
+  right: 9px !important;
+}
+
+.container.withStartAdornment > div:first-of-type > div {
+  padding-left: 48px !important;
+}
+
+.container.withEndAdornment > div:first-of-type > div {
+  padding-right: 48px !important;
+}

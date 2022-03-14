@@ -1,0 +1,7 @@
+.container {
+  display: inline-block;
+}
+
+.popover-content {
+  padding: 24px;
+}

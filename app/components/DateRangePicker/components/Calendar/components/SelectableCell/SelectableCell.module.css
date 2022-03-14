@@ -1,0 +1,13 @@
+.selectable-cell {
+  padding-top: calc((100% / 7) - 2px);
+  margin: 2px 0;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.selectable-cell:hover {
+  background-color: #ebebeb !important;
+}

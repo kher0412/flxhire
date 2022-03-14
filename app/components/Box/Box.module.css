@@ -1,0 +1,23 @@
+.box {
+  padding: 48px;
+}
+
+.compact {
+  padding: 24px 48px;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    padding: 24px;
+  }
+
+  .compact {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    padding: 12px;
+  }
+}

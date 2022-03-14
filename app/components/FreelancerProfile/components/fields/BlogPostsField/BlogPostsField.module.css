@@ -1,0 +1,30 @@
+.container {
+  padding: 12px;
+}
+
+@media (min-width: 1048px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+.card,
+.card-action-area {
+  height: 100%;
+}
+
+.card-content {
+  height: calc(100% - 192px);
+}
+
+.title {
+  font-size: 17px;
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.25em;
+  margin-bottom: 24px;
+  margin-top: -12px;
+  font-size: 14px;
+}

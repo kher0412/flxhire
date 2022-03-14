@@ -1,0 +1,130 @@
+.paper {
+  animation: card-appear 0.5s cubic-bezier(0.8, 0, 0, 1);
+  transform-origin: top center;
+}
+
+.table {
+  overflow: hidden;
+}
+
+.row > td:last-of-type,
+.hrow > th:last-of-type {
+  padding: 0 !important;
+  width: 58px !important;
+}
+
+.row {
+  animation: row-appear 0.5s cubic-bezier(0.7, 0, 0, 1);
+  animation-fill-mode: backwards;
+  transform-origin: bottom center;
+  cursor: pointer;
+}
+
+.row.pending,
+.row.pending:hover,
+.card.pending {
+  background-color: rgb(225, 175, 0) !important;
+}
+
+.row.pending *,
+.card.pending * {
+  color: #fff !important;
+}
+
+@keyframes row-appear {
+  from {
+    transform: translateY(-24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes card-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.status-bulb {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+  margin-left: 12px;
+  margin-top: -1px;
+}
+
+.status-pending,
+.status-submitted,
+.status-client_query {
+  background: rgb(225, 175, 0);
+}
+
+.status-approved,
+.status-invoiced,
+.status-paid {
+  background: rgb(0, 165, 0);
+}
+
+.status-payout_failed,
+.status-rejected,
+.status-overdue,
+.status-void {
+  background: rgb(235, 0, 0);
+}
+
+.paddings {
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.status {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pending,
+.submitted,
+.client_query {
+  color: #F5B861;
+}
+
+.approved,
+.invoiced,
+.paid {
+  color: #5FCA50;
+}
+
+.payout_failed,
+.rejected,
+.overdue,
+.void {
+  color: #F50057;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: -12px !important;
+  margin-bottom: -8px !important;
+}
+
+.details span {
+  flex: 1;
+}
+
+.server-error {
+  padding: 0 20px;
+  float: right;
+}

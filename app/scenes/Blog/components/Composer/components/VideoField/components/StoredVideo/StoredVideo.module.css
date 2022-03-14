@@ -1,0 +1,101 @@
+.container {
+  position: relative;
+}
+
+.button-icon {
+  margin-right: 12px !important;
+}
+
+.video-wrapper {
+  position: relative;
+  width: calc(100% + 96px);
+  margin: -48px -48px 12px -48px;
+  background-color: rgba(0, 0, 0, 0.04);
+  transition: opacity 0.3s ease;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  max-height: 600px;
+  z-index: 2;
+}
+
+.video-loader {
+  position: absolute;
+  left: 48px;
+  top: calc(50% - 8px);
+  width: calc(100% - 96px);
+  text-align: center;
+  z-index: 1;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.spinner {
+  animation: spinner-spin 1s linear infinite;
+}
+
+@keyframes spinner-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+.placeholder-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder {
+  position: relative;
+  padding: 48px;
+}
+
+.placeholder-circle {
+  position: absolute;
+  left: calc(50% - 48px);
+  top: calc(50% - 48px);
+  width: 96px;
+  height: 96px;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.placeholder-area {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  background-color: transparent;
+  transition-property: background-color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.placeholder-drop-text {
+  position: absolute;
+  top: calc(50% + 36px);
+  left: 12px;
+  width: calc(100% - 24px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.arrow {
+  animation: arrow-pulse 0.9s ease infinite;
+}
+
+@keyframes arrow-pulse {
+  0% { opacity: 0; transform: translateY(-12px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(12px); }
+}

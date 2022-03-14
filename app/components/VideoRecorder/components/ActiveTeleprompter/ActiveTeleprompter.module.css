@@ -1,0 +1,75 @@
+.container {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 36px;
+  line-height: 48px;
+  max-width: 90%;
+  max-height: 80%;
+  width: 1000px;
+  height: 300px;
+  pointer-events: none;
+  overflow: hidden;
+  animation: container-appear 1.5s ease;
+
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.1),
+    -1px 1px 0 rgba(0, 0, 0, 0.1),
+    1px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px -1px 0 rgba(0, 0, 0, 0.1),
+    0px 1px 0 rgba(0, 0, 0, 0.1),
+    0px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px 0px 0 rgba(0, 0, 0, 0.1),
+    1px 0px 0 rgba(0, 0, 0, 0.1),
+    2px 2px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 0 rgba(0, 0, 0, 0.1),
+    2px -2px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 0 rgba(0, 0, 0, 0.1),
+    0px 2px 0 rgba(0, 0, 0, 0.1),
+    0px -2px 0 rgba(0, 0, 0, 0.1),
+    -2px 0px 0 rgba(0, 0, 0, 0.1),
+    2px 0px 0 rgba(0, 0, 0, 0.1),
+    1px 2px 0 rgba(0, 0, 0, 0.1),
+    -1px 2px 0 rgba(0, 0, 0, 0.1),
+    1px -2px 0 rgba(0, 0, 0, 0.1),
+    -1px -2px 0 rgba(0, 0, 0, 0.1),
+    2px 1px 0 rgba(0, 0, 0, 0.1),
+    -2px 1px 0 rgba(0, 0, 0, 0.1),
+    2px -1px 0 rgba(0, 0, 0, 0.1),
+    -2px -1px 0 rgba(0, 0, 0, 0.1);
+
+  filter: drop-shadow(0 0 32px #000);
+}
+
+@keyframes container-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  animation: content-scroll 60s linear;
+  animation-fill-mode: forwards;
+  min-height: 100%;
+}
+
+.content p {
+  margin: 0.5em 0;
+}
+
+@keyframes content-scroll {
+  from {
+    transform: translateY(264px);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}

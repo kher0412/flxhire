@@ -1,0 +1,22 @@
+.icon,
+.chip {
+  cursor: pointer;
+  margin-left: 6px !important;
+  margin-top: -2px !important;
+}
+
+.icon {
+  color: #35CC84;
+}
+
+.avatar {
+  width: 24px !important;
+  padding: 0 !important;
+  margin-right: -9px !important;
+}
+
+.chip,
+.avatar {
+  height: 24px !important;
+  background-color: #35CC84 !important;
+}

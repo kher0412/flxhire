@@ -1,0 +1,25 @@
+.tags > *:not(:last-of-type)::after,
+.tagspipe > *:not(:last-of-type)::after {
+  display: inline-block;
+  margin: 0 0.75em;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .tags > *:not(:last-of-type)::after,
+  .tagspipe > *:not(:last-of-type)::after {
+    margin: 0 0.5em;
+  }
+}
+
+.tags > *:not(:last-of-type)::after {
+  content: '·';
+}
+
+.tagspipe > *:not(:last-of-type)::after {
+  content: '|';
+}
+
+.tags.dense > *:not(:last-of-type)::after {
+  margin: 0 0.35em;
+}

@@ -1,0 +1,20 @@
+.availability-icon, .status-icon {
+  margin-right: 6px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+
+.verified,
+.unverified {
+  vertical-align: middle;
+  animation: name-type-appear 0.5s ease-out 0.55s;
+  animation-fill-mode: backwards;
+}
+
+.verified {
+  color: rgb(0, 165, 0);
+}
+
+.unverified {
+  color: rgba(0, 0, 0, 0.4);
+}

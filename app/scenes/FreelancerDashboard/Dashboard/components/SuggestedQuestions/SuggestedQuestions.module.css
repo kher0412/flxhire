@@ -1,0 +1,32 @@
+.container {
+  animation: container-appear 0.5s cubic-bezier(0.7, 0, 0, 1);
+  transform-origin: top right;
+  position: relative;
+  overflow: visible !important;
+  height: calc(100% - 24px);
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 18px !important;
+}
+
+@keyframes container-appear {
+  from {
+    transform: scale(0) translateY(-100px);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.actions {
+  position: absolute;
+  text-align: right;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 24px !important;
+  box-sizing: border-box;
+}

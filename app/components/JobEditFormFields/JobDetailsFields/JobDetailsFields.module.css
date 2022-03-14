@@ -1,0 +1,21 @@
+
+/* overqualification is necessary here to override component defaults */
+svg.buttonIcon {
+  margin-left: 12px;
+  margin-right: 0 !important;
+}
+
+.actions {
+  padding: 24px;
+}
+
+@media (max-width: 800px) {
+  .actions {
+    padding: 12px;
+    padding-bottom: 0;
+  }
+}
+
+.menuDivider:last-child {
+  display: none;
+}

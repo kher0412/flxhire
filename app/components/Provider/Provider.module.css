@@ -1,0 +1,39 @@
+.provider-container {
+  background-color: #fff;
+  display: flex;
+  flex-grow: 1;
+  padding: 30px;
+  min-height: 500px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  color: #3F51B5;
+  font-size: 22px;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.provider {
+  color: #F50057;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.time {
+  font-size: 22px;
+  margin: 0px 10px;
+}

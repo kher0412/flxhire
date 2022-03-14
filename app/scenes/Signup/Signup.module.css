@@ -1,0 +1,110 @@
+.signup {
+  background: transparent;
+  margin: 48px auto;
+  max-width: 680px;
+}
+
+@media (max-width: 800px) {
+  .signup {
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  max-width: 168px;
+  max-height: 60px;
+  display: block;
+  margin: 24px auto 36px auto;
+}
+
+.button-icon {
+  margin-right: 12px !important;
+}
+
+.copy {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0 auto 24px auto;
+}
+
+.copy,
+.copy span {
+  transition: color 1s ease;
+}
+
+.select-head {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 72px auto 0 auto;
+}
+
+.box {
+  margin: 72px !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 800px) {
+  .box {
+    margin: 24px 18px !important;
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .right-align-on-desktop {
+    text-align: right;
+  }
+}
+
+.buttons-container {
+  padding: 12px 24px 0 24px;
+}
+
+.anim-items > * {
+  animation: field-appear 0.4s ease-out 0.4s backwards;
+}
+
+.anim-items > *:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.anim-items > *:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.anim-items > *:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+.anim-items > *:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes field-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.signup-buttons {
+  padding-top: 12px;
+}
+
+.signup-buttons > * {
+  margin-top: 12px !important;
+}
+
+.footer {
+  font-size: 13px;
+  padding-top: 20px !important;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.default-usertype-switch {
+  display: inline-block;
+  padding-left: 24px;
+}

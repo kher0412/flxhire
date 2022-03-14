@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.avatar {
+  width: 100px !important;
+  height: 100px !important;
+  margin-bottom: 12px;
+}
+
+.description {
+  flex: 1 0 content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.title {
+  flex: 1 0 auto;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.button {
+  margin-top: 12px;
+  flex: 1 0 auto;
+}
+
+.actualUpload { display: none; }
+
+.file-name { margin-top: 5px; }
+
+.error {
+  color: #f44336;
+  font-size: 12px;
+}

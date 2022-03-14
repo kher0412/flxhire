@@ -1,0 +1,38 @@
+.button-plaidlink {
+  overflow: hidden;
+  display: inline-block;
+  border: 0px !important;
+  text-decoration: none;
+  border-radius: 7px !important;
+  cursor: pointer;
+  visibility: visible;
+  user-select: none;
+  color: white;
+  padding: 6px 12px !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  font-size: 0.875rem;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  background: #2ECB80 !important;
+  height: 42px;
+  width: 100%;
+}
+
+.button-plaidlink:hover {
+  background: rgb(39, 175, 110) !important;
+}
+
+.radio {
+  font-size: 14px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container > * {
+  margin-bottom: 12px !important;
+}

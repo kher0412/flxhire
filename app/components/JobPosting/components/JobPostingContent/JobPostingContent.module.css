@@ -1,0 +1,147 @@
+.box {
+  padding: 12px;
+}
+
+@media (min-width: 1000px) {
+  .box {
+    padding: 48px;
+  }
+}
+
+.main-area {
+  position: relative;
+  z-index: 2;
+}
+
+.main-area-wrapper {
+  position: relative;
+}
+
+.subheader {
+  padding: 0 24px !important;
+  margin: 24px 0 24px 0;
+}
+
+@media (max-width: 999px) {
+  .subheader {
+    padding: 0 12px !important;
+    margin: 12px 0;
+  }
+}
+
+.subheader-subtitle {
+  color: #0033cc;
+}
+
+.subheader-subtitle-separator {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.subheader-subtitle-separator::before {
+  content: '·';
+}
+
+.skills {
+  padding: 0 24px;
+  margin: 12px 0;
+}
+
+@media (max-width: 999px) {
+  .skills {
+    padding: 12px;
+  }
+}
+
+.info-tiles {
+  margin: 12px 0;
+  padding: 0 12px;
+}
+
+.buttons {
+  padding: 0px 24px 24px 24px;
+}
+
+.buttons > * {
+  margin-right: 12px !important;
+}
+
+.button-icon {
+  margin-left: 12px !important;
+}
+
+.position-types:first-letter {
+  text-transform: capitalize;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-top: 60px;
+  background-color: #ddd;
+}
+
+.splash-sidebar > * {
+  animation: side-item-appear 0.4s cubic-bezier(0.8, 0, 0, 1) 1.5s backwards;
+  transform-origin: center left;
+}
+
+.splash-sidebar > *:nth-of-type(1) {
+  animation-delay: 1.2s;
+}
+
+.splash-sidebar > *:nth-of-type(2) {
+  animation-delay: 1.3s;
+}
+
+.splash-sidebar > *:nth-of-type(3) {
+  animation-delay: 1.4s;
+}
+
+@keyframes side-item-appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  position: absolute;
+  margin-top: -36px;
+  left: 100%;
+  top: 200px;
+  width: calc(50vw - 500px);
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 21px;
+  padding: 0 24px;
+  margin: 36px 0 0 0;
+  line-height: 1.75em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 999px) {
+  .title {
+    padding: 0 12px;
+  }
+}
+
+.internals {
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+@media (min-width: 1000px) {
+  .internals {
+    padding: 48px 72px;
+  }
+}

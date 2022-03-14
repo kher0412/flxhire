@@ -1,0 +1,36 @@
+.label {
+  line-height: 40px;
+  margin-right: 12px;
+  font-size: 16px;
+  color: #333;
+  padding-left: 6px;
+}
+
+.job-selector {
+  margin-right: 12px !important;
+  max-width: 100% !important;
+}
+
+.job-selector > button {
+  max-width: 100% !important;
+}
+
+.job-selector-button-label {
+  max-width: 240px !important;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .job-selector-button-label {
+    max-width: 100% !important;
+    width: 240px !important;
+  }
+}
+
+.link {
+  text-decoration: none !important;
+  margin-right: 12px !important;
+}

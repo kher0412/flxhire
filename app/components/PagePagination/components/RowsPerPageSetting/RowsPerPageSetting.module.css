@@ -1,0 +1,14 @@
+.container {
+  display: inline-block;
+  margin-left: 22px;
+}
+
+.select {
+  font-size: 16px !important;
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+/* disable select underline */
+.select::before {
+  border-bottom: none !important;
+}

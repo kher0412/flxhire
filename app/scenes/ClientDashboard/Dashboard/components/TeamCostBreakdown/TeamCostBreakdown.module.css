@@ -1,0 +1,60 @@
+.container {
+  margin-top: 96px;
+}
+
+.content {
+  padding: 12px !important;
+}
+
+@media (min-width: 1000px) {
+  .content {
+    padding: 30px 24px 24px 24px !important;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-top: 24px;
+  }
+
+  .card {
+    box-shadow: none !important;
+  }
+
+  .content {
+    margin-top: 12px;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding: 18px 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.chart {
+  height: 210px;
+}
+
+.bottom-bar {
+  padding: 12px 24px !important;
+}
+
+.actions {
+  margin-left: auto !important;
+}
+
+.link {
+  text-decoration: none;
+}

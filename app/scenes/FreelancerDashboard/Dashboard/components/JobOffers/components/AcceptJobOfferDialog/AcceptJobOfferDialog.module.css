@@ -1,0 +1,15 @@
+.contract {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  color: #555;
+  padding: 15px;
+  margin: 15px 0;
+  height: 280px;
+  overflow-y: scroll;
+  font-size: 13px;
+}
+
+.terms-of-service {
+  margin-top: 12px;
+  padding-left: 12px;
+}

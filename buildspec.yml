@@ -1,0 +1,40 @@
+version: 0.2
+env:
+  variables:
+    NPM_BUILD_COMMAND: "staging"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm install -g npm@7
+      - cd $CODEBUILD_SRC_DIR/frontend && npm install
+  build:
+    commands:
+      - cd $CODEBUILD_SRC_DIR/frontend && npm run $NPM_BUILD_COMMAND
+      - cd $CODEBUILD_SRC_DIR/frontend && npm run build-embed-scripts-$NPM_BUILD_COMMAND
+  post_build:
+    commands:
+      - cd $CODEBUILD_SRC_DIR/frontend && ./node_modules/.bin/sentry-cli releases deploys $(cat $CODEBUILD_SRC_DIR/frontend/.buildId) new -e $NPM_BUILD_COMMAND
+      - cd $CODEBUILD_SRC_DIR/frontend && npm run delete-source-maps
+      - cd $CODEBUILD_SRC_DIR && mkdir -p ./_next/static/
+      - cd $CODEBUILD_SRC_DIR && cp -r ./frontend/.next/static/* ./_next/static/
+      - cd $CODEBUILD_SRC_DIR && cp ./frontend/service-worker.js .
+
+artifacts:
+  secondary-artifacts:
+    app:
+      files:
+        - '**/*'
+      base-directory: 'frontend'
+      name: app
+    staticfiles:
+      files:
+        - '_next/static/**/*'
+        - 'service-worker.js'
+      name: staticfiles
+
+cache:
+  paths:
+    - 'frontend/.next/cache/**/*'
+    - "/root/.npm/**/*"

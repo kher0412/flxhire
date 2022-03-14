@@ -1,0 +1,7 @@
+.avatar-field {
+  margin-bottom: 24px;
+}
+
+.avatar-field > div {
+  align-items: center !important;
+}

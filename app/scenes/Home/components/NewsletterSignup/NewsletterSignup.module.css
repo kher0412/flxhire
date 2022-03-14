@@ -1,0 +1,64 @@
+.container {
+  background: #F3F7FB;
+  padding: 96px 48px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 48px 24px 24px 24px;
+  }
+}
+
+.icon {
+  text-align: center;
+}
+
+.heading {
+  font-size: 43px;
+  font-weight: 400;
+  margin: 48px 0;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 30px;
+    margin: 36px 0;
+  }
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.input {
+  background: #fff;
+  max-width: calc(100% - 68px);
+  width: 400px;
+}
+
+.input input {
+  border-width: 2px !important;
+  padding-left: 24px !important;
+}
+
+.button,
+.iconButton {
+  background: linear-gradient(to bottom, #35CC84 0%, #1FC977 100%) !important;
+  height: 55px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  margin-left: 24px !important;
+}
+
+.iconButton {
+  margin-left: 12px !important;
+  height: 55px !important;
+  width: 55px !important;
+}

@@ -1,0 +1,12 @@
+.summary {
+  color: #f44336;
+  display: inline-block;
+  margin: 0 24px;
+  font-size: 14px;
+  animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,33 @@
+.card-content {
+  padding: 48px !important;
+}
+
+.card-actions {
+  padding: 24px 48px !important;
+}
+
+@media (max-width: 1050px) {
+  .card-content,
+  .card-actions {
+    padding: 24px !important;
+  }
+}
+
+.radio {
+  padding-left: 12px;
+}
+
+.video {
+  margin: 0;
+  animation: video-appear 0.4s ease;
+}
+
+@keyframes video-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

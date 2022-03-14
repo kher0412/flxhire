@@ -1,0 +1,71 @@
+.label,
+.label-error {
+  position: absolute;
+  left: 12px;
+  top: 5px;
+  background-color: #fff;
+  padding: 0 6px;
+  line-height: 1em;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.label-error {
+  color: rgb(244, 67, 54);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  margin-top: 0px !important;
+  border-bottom: none !important;
+}
+
+.textarea,
+.textarea-error {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 18px;
+  padding-top: 21px;
+  margin: 12px 0;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+  line-height: 1.5em;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  transition: border-color 0.15s ease;
+}
+
+.textarea-error {
+  border-color: rgb(244, 67, 54);
+}
+
+.textarea:hover {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+.textarea:focus,
+.textarea-error:focus {
+  border-color: #3f51b5;
+}
+
+.textarea:focus + .label,
+.textarea-error:focus + .label,
+.textarea:focus + .label-error,
+.textarea-error:focus + .label-error {
+  color: #3f51b5 !important;
+}
+
+.error {
+  padding: 0 18px 18px 18px;
+  margin-top: -9px;
+  color: rgb(244, 67, 54);
+  font-size: 13px;
+}

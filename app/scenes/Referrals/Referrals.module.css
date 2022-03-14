@@ -1,0 +1,48 @@
+
+.hero {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.subtitle {
+  display: inline;
+  margin-left: .25em;
+}
+
+@media (max-width: 800px) {
+  .hero { padding: 40px 10px; }
+  .subtitle { display: block; margin-left: 0; }
+}
+
+.statement {
+  margin: 20px 10px;
+  text-align: center;
+  line-height: 1em;
+}
+
+.form {
+  padding: 20px;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.share > .statement {
+  margin-bottom: 10px;
+}
+
+.link {
+  width: 100%;
+  max-width: 500px;
+}

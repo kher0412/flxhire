@@ -1,0 +1,29 @@
+.collapse {
+  padding: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.open-item {
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+
+.code-test-description {
+  font-size: 15px;
+  margin-bottom: 12px;
+  line-height: 1.5em;
+}
+
+.code-test-description > *:first-child {
+  margin-top: 0;
+}
+
+.button-icon {
+  margin-right: 12px !important;
+}
+
+.code-test-description > h1,
+.code-test-description > h2,
+.code-test-description > h3 {
+  font-size: 1em;
+}

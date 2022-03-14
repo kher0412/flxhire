@@ -1,0 +1,56 @@
+.features {
+  text-align: center;
+  margin: 5% auto 10% auto;
+  transition: opacity 0.4s ease;
+}
+
+.title,
+.subtitle,
+.action {
+  position: relative;
+  z-index: 1;
+  margin: 24px;
+}
+
+.subtitle {
+  line-height: 1.75em;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 100;
+  vertical-align: bottom;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  vertical-align: top;
+}
+
+@media (max-width: 1000px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+.action {
+  margin-top: 36px;
+}
+
+.button,
+.button > * {
+  font-size: 24px !important;
+}
+
+@media (max-width: 1000px) {
+  .button,
+  .button > * {
+    font-size: 18px !important;
+  }
+}

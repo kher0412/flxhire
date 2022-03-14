@@ -1,0 +1,6 @@
+.title {
+  display: inline-block;
+  max-width: calc(100% - 64px);
+  font-weight: 500;
+  margin-bottom: 24px;
+}

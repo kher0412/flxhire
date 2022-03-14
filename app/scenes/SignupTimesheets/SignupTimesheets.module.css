@@ -1,0 +1,41 @@
+.container {
+  padding: 48px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+.section-heading {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 1em;
+}
+
+.submit-container {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.copy {
+  margin: 24px 0;
+  font-size: 16px;
+  color: #8E97A3;
+  line-height: 34px;
+}
+
+.screenshot {
+  display: block;
+  margin: 21px auto 0 auto;
+}
+
+.screenshot-subtitle {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}

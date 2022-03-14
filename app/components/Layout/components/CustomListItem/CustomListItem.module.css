@@ -1,0 +1,16 @@
+.nested {
+  padding-left: 32px !important;
+}
+
+.nested svg {
+  color: white;
+  padding-left: 16px;
+}
+
+.sidebarLink {
+  color: white !important;
+}
+
+.sidebarLink:hover {
+  text-decoration: none !important;
+}

@@ -1,0 +1,55 @@
+.container {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 48px; /* space for map controls */
+  z-index: 4;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+.field {
+  display: flex;
+}
+
+.icon {
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.list-item {
+  animation: appear 0.5s cubic-bezier(0.7, 0, 0, 1) 0.8s backwards;
+}
+
+.list-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.list-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.list-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.list-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.list-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes appear {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+

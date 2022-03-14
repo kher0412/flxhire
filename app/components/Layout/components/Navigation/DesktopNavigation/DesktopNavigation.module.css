@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  margin-top: 2px;
+}
+
+.navigation > * {
+  margin: 12px 24px !important;
+}
+
+.navigation .primaryButton,
+.navigation .primaryButton * {
+  color: #fff !important;
+}
+
+.drawer {
+  width: 288px;
+  flex-shrink: 0;
+}
+
+.drawerPaper {
+  width: 288px;
+  display: block !important;
+  z-index: 799 !important;
+  background: linear-gradient(180deg, #0057FF 0%, #0085FF 100%);
+}
+
+@media (max-width: 1600px) {
+  .navigation > * {
+    margin: 12px 6px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    display: none;
+  }
+
+  .navigation .primaryButton {
+    margin-left: 0 !important;
+  }
+}

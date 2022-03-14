@@ -1,0 +1,14 @@
+.box {
+  margin: 12px !important;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1000px) {
+  .box {
+    margin: 48px !important;
+  }
+}
+
+.buttonsContainer {
+  text-align: right;
+}

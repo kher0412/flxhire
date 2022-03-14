@@ -1,0 +1,26 @@
+.container {
+  position: relative !important;
+  z-index: 10 !important;
+  min-height: 300 !important;
+  overflow: visible !important;
+}
+
+.content-wrapper {
+  padding: 0 48px 12px 48px;
+}
+
+@media (max-width: 1050px) {
+  .content-wrapper {
+    padding: 0 24px 12px 24px;
+  }
+}
+
+.comments-wrapper {
+  padding: 48px;
+}
+
+@media (max-width: 1050px) {
+  .comments-wrapper {
+    padding: 24px;
+  }
+}

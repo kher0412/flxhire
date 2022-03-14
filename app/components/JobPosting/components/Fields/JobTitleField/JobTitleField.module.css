@@ -1,0 +1,33 @@
+.container {
+  font-size: 32px;
+  padding-bottom: 6px;
+  transition: margin 0.4s ease;
+}
+
+.subheader-title {
+  display: inline-block;
+  font-size: 32px;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 899px) {
+  .container {
+    font-size: 24px;
+  }
+}
+
+.text {
+  margin-top: 24px !important;
+}
+
+.icon-button {
+  margin-top: -12px !important;
+  margin-bottom: -12px !important;
+  margin-left: 12px !important;
+}
+
+@media (max-width: 400px) {
+  .icon-button {
+    margin-left: 6px !important;
+  }
+}

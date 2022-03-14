@@ -1,0 +1,37 @@
+.feedback {
+  display: inline-flex !important;
+}
+
+.sum {
+  display: flex;
+  font-size: 17px;
+}
+
+.sum * {
+  vertical-align: middle;
+}
+
+.sum svg {
+  margin-top: -3px !important;
+  animation: none !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+@media (min-width: 500px) {
+  .up {
+    margin-right: 12px;
+  }
+
+  .up,
+  .up * {
+    fill: #2ECB80;
+    color: #2ECB80;
+  }
+}
+
+.down,
+.down * {
+  fill: #F16083;
+  color: #F16083;
+}

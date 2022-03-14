@@ -1,0 +1,70 @@
+@media (min-width: 750px) {
+  .rate {
+    margin: 24px 0 24px 0;
+  }
+}
+
+.wrapper {
+  transition: padding-bottom 0.3s ease;
+}
+
+.tag {
+  position: relative;
+}
+
+.rate {
+  margin-left: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.text {
+  margin: -3px 0 -4px 0;
+}
+
+.error,
+.errorInline {
+  text-transform: none;
+  font-size: 13px;
+  color: rgb(244, 67, 54);
+  margin-bottom: 12px;
+}
+
+.errorInline {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  max-width: calc(100% - 48px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .errorInline {
+    display: none;
+  }
+}
+
+.edit {
+  display: inline;
+  margin-top: -16px !important;
+  margin-bottom: -14px !important;
+}
+
+.topline,
+.bottomline {
+  width: 12px;
+  height: 4px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.topline {
+  margin-bottom: 24px;
+}
+
+.bottomline{
+  margin-top: 24px;
+}

@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+  color: #3F51B5;
+}
+
+.icon {
+  height: 0.6em !important;
+  width: 0.6em !important;
+  margin-bottom: -0.125em !important;
+  margin-left: 0.125em !important;
+}

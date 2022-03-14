@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.title {
+  margin-top: 30px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: .8rem;
+  color: #f44336;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.actualUpload { display: none; }
+
+.file-name { margin-top: 5px; }
+
+.button span {
+  font-weight: bold!important;
+  font-size: 13px!important;
+  color: #444!important;
+}

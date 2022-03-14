@@ -1,0 +1,20 @@
+.container {
+  padding: 48px 24px;
+}
+
+.icon,
+.title,
+.text {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.icon > * {
+  width: 48px !important;
+  height: 48px !important;
+  opacity: 0.6;
+}

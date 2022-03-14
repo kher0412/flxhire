@@ -1,0 +1,12 @@
+.side-container {
+  position: absolute;
+  left: 100%;
+  height: calc(100% - 140px);
+  top: 116px;
+  padding: 24px;
+}
+
+.side-content {
+  position: sticky;
+  top: 24px;
+}

@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  margin-top: 0px !important;
+  border-bottom: none !important;
+}
+
+.textarea,
+.textarea-error {
+  border: 2px solid #E0E9F2;
+  padding: 12px 18px 12px 18px;
+  margin: 6px 0 12px 0;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+  line-height: 28px;
+  font-size: 17px;
+  font-family: inherit;
+  font-weight: 400;
+  transition: border-color 0.15s ease;
+}
+
+@media (max-width: 800px) {
+  .textarea,
+  .textarea-error {
+    font-size: 15px;
+  }
+}
+
+.textarea-error {
+  border-color: rgb(244, 67, 54);
+}
+
+.textarea:hover {
+  border-color: rgb(207, 217, 226);
+}
+
+.textarea:focus,
+.textarea-error:focus {
+  border-color: #2ECB80;
+}
+
+.textarea:focus + .label,
+.textarea-error:focus + .label,
+.textarea:focus + .label-error,
+.textarea-error:focus + .label-error {
+  color: #2ECB80 !important;
+}
+
+.error {
+  padding: 0 12px 12px 18px;
+  margin-top: -12px;
+  color: rgb(244, 67, 54);
+  font-size: 13px;
+}
+
+.textarea::placeholder {
+  color: #B7C5D1;
+  opacity: 1;
+  font-size: 17px;
+}
+
+@media (max-width: 800px) {
+  .textarea::placeholder {
+    font-size: 15px;
+  }
+}

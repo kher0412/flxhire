@@ -1,0 +1,25 @@
+.comment {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 0;
+  margin-bottom: -1px;
+  font-size: 14px;
+  flex-basis: 100%;
+  order: 5;
+}
+
+.comment-wrapper {
+  padding: 24px 36px;
+}
+
+@media (max-width: 800px) {
+  .comment {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .comment-wrapper {
+    padding: 12px;
+  }
+}

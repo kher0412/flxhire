@@ -1,0 +1,11 @@
+.button {
+  color: #fff!important;
+}
+
+.button:disabled {
+  background-color: #FF80AB!important;
+}
+
+.button .label {
+  font-size: 14px;
+}

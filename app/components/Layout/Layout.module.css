@@ -1,0 +1,57 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 170px);
+
+  margin-left: 0px;
+  transition: margin 0.2s ease-in;
+}
+
+.contentContainerShift {
+  margin-left: 288px;
+  transition: margin 0.2s ease-out;
+}
+
+.app-container {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.fab-container {
+  position: absolute;
+  bottom: 24px;
+  left: 18px;
+  z-index: 800; /* Needs to be high enough to be on top of page elements, but needs to be below the dialog background layer */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.fab-container > * {
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .fab-container {
+    bottom: 68px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    min-height: calc(100vh - 226px);
+  }
+}
+
+@media (max-width:  1200px) {
+  .contentContainerShift {
+    margin-left: 0px;
+    transition: margin 0.2s ease-out;
+  }
+}
+
+.fab-disabled {
+  background-color: #ddd !important; /* has 100% opacity but looks the same as the material-ui disabled color for fabs */
+}

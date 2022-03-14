@@ -1,0 +1,234 @@
+.freelancer {
+  animation: container-appear 0.5s cubic-bezier(0.7, 0, 0, 1);
+  transform-origin: top center;
+}
+
+@keyframes container-appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cta {
+  text-align: center;
+  margin: 24px auto;
+}
+
+.cta button {
+  margin: 6px;
+}
+
+.timeline-title {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 30px 0 14px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.skills-title {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 30px 0 14px 0;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+  animation: name-type-appear 0.5s ease-out 0.55s;
+  animation-fill-mode: backwards;
+}
+
+.skills {
+  text-align: center;
+  margin: 24px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.skill {
+  margin: 6px;
+  display: inline-block;
+}
+
+.rating {
+  text-align: center;
+  margin: 24px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+@media (min-height: 1000px) {
+  .rating,
+  .skills {
+    margin: 36px auto;
+  }
+}
+
+.rating-title {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 36px 0 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+  animation: name-type-appear 0.5s ease-out 0.65s;
+  animation-fill-mode: backwards;
+}
+
+.rating-details {
+  text-align: center;
+  margin: 0 auto 24px auto;
+  max-width: 800px;
+}
+
+.text-introduction {
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+  animation: text-introduction-appear 1s ease;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+
+.video-introduction {
+  animation: text-introduction-appear 1s ease;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+
+.video-introduction video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-title {
+  padding: 12px 24px 24px 24px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  text-align: center;
+}
+
+.video-subtitle {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1.6em;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+@keyframes text-introduction-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.more-area {
+  padding: 24px;
+}
+
+.side-content {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 300px;
+  padding: 12px;
+}
+
+.side-content-title {
+  padding-left: 24px;
+  margin-top: 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.tabs {
+  background: rgba(224, 233, 242, 0.24);
+  padding-top: 12px;
+}
+
+@media (max-width: 420px) {
+  .tab {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+.tab > span {
+  flex-direction: row !important;
+}
+
+.tabs > div > div {
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .tabs > div > div {
+    justify-content: center;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.freelancer-content {
+  display: flex;
+  flex-grow: 4;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.about {
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.statement {
+  color: #777;
+  margin: 10px 0;
+}
+
+.social-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  margin: 5px 5px 0 0;
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.freelancer-sidebar {
+  flex-direction: column;
+  flex-basis: 170px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-left: 10px;
+  padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}

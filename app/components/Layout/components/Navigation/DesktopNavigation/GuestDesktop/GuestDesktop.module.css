@@ -1,0 +1,16 @@
+.navigation {
+  position: absolute;
+  right: 18px;
+}
+
+.navigation .primaryButton,
+.navigation .primaryButton * {
+  color: #fff !important;
+}
+
+
+@media (max-width: 1040px) { 
+  .navigation .primaryButton {
+    margin-left: 0 !important;
+  }
+}

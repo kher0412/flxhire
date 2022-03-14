@@ -1,0 +1,39 @@
+.container {
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 700;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+  position: relative;
+  transition: margin 0.4s ease;
+}
+
+@media (max-width: 760px) {
+  .container {
+    margin-bottom: 24px;
+  }
+}
+
+.error {
+  position: absolute;
+  top: 100%;
+  right: 48px;
+  margin-top: -21px;
+  color: rgb(244, 67, 54);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.edit {
+  margin-top: -14px !important;
+  margin-bottom: -14px !important;
+}
+
+.field {
+  margin-bottom: -7px !important;
+  margin-top: -6px !important;
+}
+
+.name {
+  display: inline-block;
+}

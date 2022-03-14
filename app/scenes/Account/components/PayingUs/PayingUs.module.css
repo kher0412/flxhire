@@ -1,0 +1,9 @@
+.paymentMethod {
+  height: 100%;
+  display: flex;
+}
+
+.paymentMethod > * {
+  width: 100%;
+  margin-top: auto;
+}

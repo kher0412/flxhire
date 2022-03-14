@@ -1,0 +1,8 @@
+.share-buttons {
+  display: flex;
+}
+
+.share-buttons > * {
+  padding: 12px !important;
+  vertical-align: middle;
+}

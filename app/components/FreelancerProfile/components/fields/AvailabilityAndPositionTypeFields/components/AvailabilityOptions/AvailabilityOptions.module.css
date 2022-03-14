@@ -1,0 +1,17 @@
+@media (min-width: 0px) and (max-width: 800px) {
+  .availability-options {
+    flex-direction: column;
+  }
+}
+@media (min-width: 801px) and (max-width: 9999px) {
+  .availability-options {
+    flex-direction: row;
+  }
+}
+
+.availability-options {
+  display: flex;
+  .availability-chip {
+    margin: 0 20px 10px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  padding: 24px;
+  padding-top: 72px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1401px) {
+  .sidebar {
+    padding: 36px;
+    padding-top: 96px;
+    width: 400px;
+  }
+}

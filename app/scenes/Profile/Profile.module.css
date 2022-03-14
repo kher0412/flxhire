@@ -1,0 +1,89 @@
+.introCard {
+  margin-bottom: 24px !important;
+}
+
+@media (max-width: 800px) {
+  .introCard {
+    margin-bottom: 12px !important;
+  }
+}
+
+.introCardContent {
+  padding-top: 0 !important;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #666;
+}
+
+@media (min-width: 801px) {
+  .introCardContent {
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    margin-top: -36px !important;
+  }
+}
+
+.button-container {
+  padding-top: 24px;
+  text-align: right;
+}
+
+.resume-error {
+  color: #F50057;
+}
+
+.card {
+  position: relative !important;
+  z-index: 10 !important;
+  min-height: 300 !important;
+  overflow: visible !important;
+}
+
+.wrapper {
+  padding: 48px;
+  padding-top: 24px;
+}
+
+.wrapper > div {
+  border: 2px solid #E0E9F2;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.infoMessage {
+  margin-top: 24px;
+}
+
+.controls {
+  padding: 48px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 24px;
+    padding-top: 12px;
+  }
+
+  .controls {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 12px;
+    padding-top: 0;
+  }
+
+  .controls {
+    padding: 12px;
+  }
+}

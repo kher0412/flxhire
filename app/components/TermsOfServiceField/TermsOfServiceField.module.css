@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.field {
+  font-size: 14px;
+
+}
+
+.field a {
+  text-decoration: none;
+  margin-left: 0px;
+}
+
+.error {
+  color: #F50057;
+}

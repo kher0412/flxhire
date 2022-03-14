@@ -1,0 +1,65 @@
+@media (min-width: 0px) and (max-width: 1000px) {
+  .container {
+    padding-bottom: 50px;
+  }
+
+  .reference {
+    width: 100%;
+  }
+}
+@media (min-width: 1001px) and (max-width: 9999px) {
+  .container {
+    padding-bottom: 200px;
+  }
+
+  .reference {
+    width: 1000px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 10px;
+  margin-top: 24px;
+}
+
+.reference {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.fields {
+  padding: 0 48px;
+
+}
+
+.statement {
+  margin: 30px 0 6px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.button-container {
+  padding: 24px 48px;
+  text-align: right;
+}
+
+.button {
+  border-radius: 5px!important;
+  width: 100%!important;
+}
+
+.divider {
+  margin-top: 48px !important;
+}

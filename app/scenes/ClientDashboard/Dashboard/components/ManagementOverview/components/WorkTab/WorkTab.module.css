@@ -1,0 +1,11 @@
+.status-pending,
+.status-submitted,
+.status-client_query {
+  color: rgb(225, 175, 0) !important;
+}
+
+.status-payout_failed,
+.status-rejected,
+.status-void {
+  color: rgb(235, 0, 0) !important;
+}

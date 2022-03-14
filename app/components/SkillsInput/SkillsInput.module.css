@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: top;
+}
+
+.button {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border: 2px solid #E0E9F2 !important;
+  border-left: none !important;
+  height: 51px !important;
+  margin-top: 6px !important;
+}
+
+.requiredSkillsInputContainer {
+  margin-bottom: 24px;
+}
+
+.extInputWrapper {
+  cursor: text;
+  width: calc(100% - 48px);
+}
+
+.extInputWrapper * {
+  pointer-events: none !important;
+}
+
+.buttonWrapper {
+  width: 48px;
+  height: 100%;
+}
+
+.experienceContainer {
+  margin-bottom: 24px;
+}

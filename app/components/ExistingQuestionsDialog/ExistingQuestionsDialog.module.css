@@ -1,0 +1,44 @@
+.tags > *:not(:last-of-type)::after {
+  content: '·';
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.icon-grow {
+  animation: icon-grow 0.3s ease;
+}
+
+@keyframes icon-grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.question-item {
+  transition: background-color 0.2s ease;
+  padding-right: 102px !important;
+}
+
+.question-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.question-item:hover + * > button,
+.question-item + * > button:hover {
+  animation: button-pulse 0.3s ease;
+}
+
+@keyframes button-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.filters-row {
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 0 12px;
+  margin: 12px 0;
+}
+
+.filters-row label {
+  font-size: 14px !important;
+}

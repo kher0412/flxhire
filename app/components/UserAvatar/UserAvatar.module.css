@@ -1,0 +1,8 @@
+.badge > span {
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.badge {
+  /* need this to undo the effect of badge > span if there are multiple badges */
+  box-shadow: none !important;
+}

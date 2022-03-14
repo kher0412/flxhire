@@ -1,0 +1,9 @@
+.wrapper {
+  padding-left: 14px;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    padding-left: 0px;
+  }
+}

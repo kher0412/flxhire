@@ -1,0 +1,18 @@
+.container {
+  margin-bottom: 18px;
+}
+
+.label {
+  color: #93A6BA;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.label strong {
+  color: #8C9FB1;
+}
+
+.slider {
+  padding: 1px;
+}

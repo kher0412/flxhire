@@ -1,0 +1,61 @@
+.statement,
+.min-statement {
+  margin: 24px 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+.section-heading {
+  margin: 20px 20px 0px 0px;
+  color: rgb(63, 81, 181);
+  font-size: 20px;
+}
+
+.box {
+  padding: 12px;
+}
+
+@media (min-width: 1000px) {
+  .box {
+    padding: 48px;
+  }
+}
+
+.button-container {
+  text-align: right;
+  padding: 24px;
+  padding-top: 12px;
+}
+
+.rate-notice {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.new-job-notice {
+  padding-top: 6px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.offer_made { color: orange!important;}
+.active { color: green!important;}
+.offer_rejected { color: red!important;}
+
+.invitation-dialog-content,
+.invitation-dialog-content * {
+  font-size: 14px;
+}
+
+.email-preview {
+  border-left: 2px solid rgba(0, 0, 0, 0.4);
+  padding-left: 12px;
+  font-size: 14px;
+}
+
+.submit-button {
+  display: none;
+}

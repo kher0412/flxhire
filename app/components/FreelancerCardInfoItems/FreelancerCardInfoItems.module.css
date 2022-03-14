@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding-top: 84px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  order: 3;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 96px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-top: 12px;
+    padding-bottom: 0;
+    padding-left: 0;
+    order: 4;
+  }
+}

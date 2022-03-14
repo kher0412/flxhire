@@ -1,0 +1,54 @@
+.wrapper {
+  min-width: 40px !important;
+}
+
+.container {
+  height: 38px;
+  min-width: 40px;
+  box-sizing: border-box;
+  border: 2px solid #E0E9F2;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border 0.24s ease, border-color 0.24s ease;
+}
+
+.noBorder {
+  border: none;
+}
+
+.container.error {
+  border-color: #f44336;
+}
+
+.checkbox {
+  margin: -4px 0 0 8px !important;
+}
+
+.label {
+  color: #112235;
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.helperText {
+  padding-top: 1px;
+  padding-left: 11px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: 38px;
+    transform: translateY(-1px);
+  }
+
+  .checkbox {
+    margin-top: -4px !important;
+    margin-left: 8px !important;
+  }
+
+  .label {
+    margin-left: -3px;
+  }
+}

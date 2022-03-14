@@ -1,0 +1,50 @@
+@media (min-width: 0px) and (max-width: 1000px) {
+  .content {
+    width: 100%;
+  }
+
+  .message {
+    margin: 30px 20px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 9999px) {
+  .content {
+    width: 1000px;
+  }
+
+  .message {
+    margin: 30px 0;
+    width: 600px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: #333;
+}
+
+.inner-content {
+  margin: 50px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.title-text {
+  margin-left: 10px;
+}
+
+.message {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}

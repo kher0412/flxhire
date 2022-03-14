@@ -1,0 +1,40 @@
+@media (min-width: 0px) and (max-width: 800px) {
+  .signup-container .content .title { font-size: 26px; }
+}
+
+@media (min-width: 801px) and (max-width: 9999px) {
+  .signup-container .content .title { font-size: 32px; }
+}
+
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 130px 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+}
+
+.title {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.apply-button {
+  background-color: #F50057 !important;
+  color: #fff!important;
+  margin-top: 160px!important;
+  width: 150px!important;
+  font-size: 14px;
+}
+
+.apply-button:hover {
+  background-color: #FF80AB !important;
+}

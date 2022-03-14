@@ -1,0 +1,10 @@
+.video {
+  transition: filter 0.3s ease;
+  width: 290px;
+  height: 163px;
+  background-color: #000;
+}
+
+.video:not(:hover) {
+  filter: grayscale(50%);
+}

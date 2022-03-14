@@ -1,0 +1,12 @@
+.actionBar {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0E9F2;
+}
+
+.box {
+  display: flex;
+}
+
+.box > *:not(:last-child) {
+  margin-right: 12px !important; /* override MUI Button margins */
+}

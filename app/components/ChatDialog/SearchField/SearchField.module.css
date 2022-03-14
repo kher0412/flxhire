@@ -1,0 +1,11 @@
+.paper {
+  display: flex;
+  width: 100%;
+  max-width: 240px;
+}
+
+.icon {
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 4px;
+  margin-left: 4px;
+}

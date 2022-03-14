@@ -1,0 +1,33 @@
+.previewCardContent {
+  padding: 24px;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.previewCardContent > p:first-child,
+.previewCardContent > h1:first-child,
+.previewCardContent > h2:first-child,
+.previewCardContent > h3:first-child,
+.previewCardContent > h4:first-child,
+.previewCardContent > h5:first-child,
+.previewCardContent > h6:first-child {
+  margin-top: 0 !important;
+}
+
+.previewCardContent > p:last-child,
+.previewCardContent > h1:last-child,
+.previewCardContent > h2:last-child,
+.previewCardContent > h3:last-child,
+.previewCardContent > h4:last-child,
+.previewCardContent > h5:last-child,
+.previewCardContent > h6:last-child {
+  margin-bottom: 0 !important;
+}
+
+.previewCardHint {
+  letter-spacing: 0.5px;
+  color: #96ADC6;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}

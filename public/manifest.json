@@ -1,0 +1,16 @@
+
+{
+  "name": "Flexhire - Connecting Talent & Opportunity",
+  "short_name": "Flexhire",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0057ff",
+  "description": "Flexhire is a global community of top pre-screened technology talent available for hire.",
+  "icons": [{
+    "src": "/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

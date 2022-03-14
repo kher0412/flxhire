@@ -1,0 +1,36 @@
+.container {
+  border: 2px solid #E0E9F2;
+  border-radius: 6px;
+  position: relative;
+  background: #0057FF;
+  margin: 0;
+  padding: 6px 9px;
+  animation: logo-row-appear 0.4s ease;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height: 48px;
+  max-width: calc(100% - 96px);
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+  left: 8px;
+  top: -12px;
+  background: #fff;
+  padding: 4px;
+  color: #758699;
+  font-size: 12px;
+}
+
+.alt {
+  margin-left: auto;
+}
+
+@keyframes logo-row-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

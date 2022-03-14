@@ -1,0 +1,25 @@
+export const references = [
+  {
+    name: 'Tahra Dactyl',
+    email: 'tahra.dactyl.test@flexhire.com',
+    relation: 1,
+    comments: 'I would have been extinct without his help.',
+    rating_overall: null,
+    rating_professional: 5,
+    rating_expert: null,
+    status: 1,
+    other_relation: null,
+    would_recommend: true,
+  }, {
+    name: 'Avery Mann',
+    email: 'avery.mann.test@flexhire.com',
+    relation: 1,
+    comments: 'Was ok, like everybody.',
+    rating_overall: null,
+    rating_professional: 4,
+    rating_expert: null,
+    status: 1,
+    other_relation: null,
+    would_recommend: true,
+  },
+]

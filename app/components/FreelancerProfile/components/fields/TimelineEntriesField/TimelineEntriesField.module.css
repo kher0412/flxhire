@@ -1,0 +1,162 @@
+.timeline {
+  position: relative;
+  max-width: 952px;
+  margin: 26px auto;
+}
+
+.mid-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 952px) {
+  .timeline {
+    padding-left: 30px;
+  }
+
+  .mid-line {
+    left: 30px;
+  }
+}
+
+.main-icon {
+  opacity: 1;
+}
+
+.item {
+  position: relative;
+  padding: 21px 36px 12px 36px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 952px) {
+  .item {
+    width: 100%;
+    padding-bottom: 48px;
+  }
+}
+
+.item:not(:first-of-type) {
+  margin-top: -24px;
+}
+
+.item-icon {
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 9px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.item-icon > * {
+  fill: #333333 !important;
+  width: 24px;
+  height: 24px;
+  margin: 12px;
+  padding: 0;
+}
+
+@media (max-width: 952px) {
+  .item-icon {
+    left: -24px;
+  }
+}
+
+@media (min-width: 953px) {
+  .item {
+    width: 50%;
+  }
+
+  .item:nth-of-type(2n) {
+    margin-left: 50%;
+  }
+
+  .item:nth-of-type(2n) .item-content {
+    animation: item-right-appear 0.5s ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  .item:nth-of-type(2n) .item-icon {
+    left: -24px;
+  }
+
+  .item:nth-of-type(2n + 1) {
+    margin-right: 50%;
+    text-align: right;
+  }
+
+  .item:nth-of-type(2n + 1) .item-content {
+    animation: item-left-appear 0.5s ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  .item:nth-of-type(2n + 1) .item-icon {
+    right: -24px;
+  }
+}
+
+.item-content {
+  opacity: 1;
+}
+
+.newItem {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: -12px;
+}
+
+.item-highlights {
+  margin-top: 6px;
+}
+
+.item-highlights ul,
+.item-highlights ol {
+  text-align: left;
+}
+
+.item-highlights pre {
+  white-space: normal;
+}
+
+.add-content {
+  margin-top: 12px;
+}
+
+.item-years {
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.error {
+  color: rgb(244, 67, 54);
+  margin-top: 12px;
+}
+
+@keyframes item-left-appear {
+  from {
+    opacity: 0;
+    transform: translateX(-48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes item-right-appear {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

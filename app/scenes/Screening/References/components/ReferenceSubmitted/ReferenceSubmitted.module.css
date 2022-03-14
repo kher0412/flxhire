@@ -1,0 +1,18 @@
+@media (min-width: 0px) and (max-width: 1000px) {
+  .container {
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 1001px) and (max-width: 9999px) {
+  .container {
+    padding-bottom: 200px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 10px;
+}

@@ -1,0 +1,80 @@
+.divider {
+  width: 600px;
+  margin: 48px auto 96px;
+  background-color: rgba(0, 0, 0, 0.16);
+  height: 2px;
+}
+
+@media (max-width: 1200px) {
+  .divider {
+    margin: 48px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .divider {
+    margin: 36px auto 24px auto;
+  }
+}
+
+.heading {
+  font-size: 43px;
+  text-align: center;
+  font-weight: 400;
+  margin: 48px 0;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 36px auto 24px auto;
+    font-size: 36px;
+  }
+}
+
+.subheading {
+  margin: 48px 0;
+  font-size: 16px;
+  color: #8E97A3;
+  line-height: 34px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .subheading {
+    margin: 24px auto;
+    line-height: 30px;
+  }
+}
+
+.items {
+  margin: 96px 0;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .items {
+    margin-top: 24px;
+  }
+}
+
+.itemsWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.itemsConnector {
+  position: absolute;
+  z-index: 1;
+  left: 200px;
+  top: 87px;
+  width: calc(100% - 400px);
+  height: 2px;
+  background: rgba(0, 0, 0, 0.16);
+  transform-origin: left top;
+  animation: itemsConnectorAppear 0.45s linear 0.538s backwards;
+}
+
+@keyframes itemsConnectorAppear {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}

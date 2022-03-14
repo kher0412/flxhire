@@ -1,0 +1,26 @@
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  justify-content: flex-end;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.nested {
+  padding-left: 32px !important;
+}
+
+.nested svg {
+  color: white;
+}
+
+.logo {
+  padding-right: 24px;
+  padding-left: 12px;
+  transition: filter 0.6s ease;
+}
+
+.menuList {
+  color: white;
+}

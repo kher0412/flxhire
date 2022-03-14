@@ -1,0 +1,13 @@
+.container {
+  height: 512px;
+  position: relative;
+  transition: transform 1s cubic-bezier(0.6, 0, 0, 1);
+}
+
+.circle {
+  height: 512px;
+  width: 512px;
+  border-radius: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}

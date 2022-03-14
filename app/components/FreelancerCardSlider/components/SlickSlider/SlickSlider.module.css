@@ -1,0 +1,49 @@
+.container {
+  width: calc(100% + 36px);
+  margin-bottom: 12px;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+.container :global(.slick-dots) {
+  bottom: -24px !important;
+  margin-top: 0 !important;
+  z-index: 3 !important;
+}
+
+.container :global(.slick-list) {
+  z-index: 2 !important;
+}
+
+.container :global(.slick-slide) > div > div {
+  outline: none !important;
+}
+
+.container :global(.slick-prev),
+.container :global(.slick-next) {
+  opacity: 0.6;
+  top: 50% !important;
+  margin-top: -24px !important;
+  z-index: 3;
+}
+
+.container :global(.slick-prev) {
+  margin-left: -2px !important;
+  left: 24px !important;
+}
+
+.container :global(.slick-next) {
+  margin-right: -2px !important;
+  right: 24px !important;
+}
+
+.container :global(.slick-prev):hover,
+.container :global(.slick-next):hover {
+  opacity: 1;
+}
+
+@media (max-width: 960px) {
+  .container {
+    margin-bottom: -12px;
+  }
+}

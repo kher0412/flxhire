@@ -1,0 +1,19 @@
+.buttons {
+  padding: 24px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.buttons button {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1660px) {
+  .buttons {
+    padding: 12px 24px;
+    padding-top: 0;
+  }
+}

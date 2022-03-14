@@ -1,0 +1,47 @@
+.container {
+  padding: 12px 0 24px 0;
+}
+
+@media (max-width: 799px) {
+  .container {
+    padding: 6px 0;
+  }
+}
+
+.h2 {
+  font-size: 16px;
+  padding-left: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.h2-sub {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 14px;
+  padding-left: 24px;
+  margin-bottom: 6px;
+}
+
+.section-specific {
+  font-weight: 200;
+  margin-top: 24px;
+  margin-bottom: 6px;
+  font-size: 16px;
+  padding-left: 24px;
+}
+
+.section-h {
+  font-weight: 600;
+  margin-top: 12px;
+  font-size: 14px;
+  padding-left: 24px;
+}
+
+.list-item {
+  padding-left: 24px !important;
+}

@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.footer * {
+  vertical-align: top;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.apply-sent {
+  padding-top: 1px;
+  color: #38C88A;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.apply-sent,
+.apply-sent * {
+  vertical-align: middle;
+}
+
+.apply-sent svg {
+  transform: translateY(-2px);
+}

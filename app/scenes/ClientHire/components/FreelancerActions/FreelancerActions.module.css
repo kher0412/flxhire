@@ -1,0 +1,32 @@
+.label {
+  margin-right: 18px !important;
+  transform: translateY(1px);
+}
+
+@media (max-width: 500px) {
+  .label {
+    display: none !important;
+  }
+}
+
+.actions {
+  margin-left: auto !important;
+}
+
+.actions > :not(:first-child) {
+  margin-left: 6px !important;
+}
+
+.actionsDropdown > * > * {
+  margin: 6px !important;
+}
+
+.button {
+  margin-left: auto !important;
+}
+
+@media (max-width: 800px) {
+  .button {
+    flex-grow: 1;
+  }
+}

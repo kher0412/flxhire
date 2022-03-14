@@ -1,0 +1,10 @@
+.no-payout-method {
+  padding: 12px 12px 10px 20px;
+  background-color: rgba(0,0,0,0.04);
+  border-bottom: 2px solid rgba(0,0,0,0.16);
+}
+
+.message {
+  font-size: 15px;
+  color: rgba(0,0,0,0.6);
+}

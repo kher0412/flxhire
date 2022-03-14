@@ -1,0 +1,62 @@
+@media (min-width: 0px) and (max-width: 800px) {
+  .field-row {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 9999px) {
+  .field-row {
+    flex-direction: row;
+  }
+}
+
+.actions {
+  padding: 24px;
+  text-align: right;
+}
+
+.project {
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.projects {
+  margin: 10px 0;
+}
+
+.field-row {
+  display: flex;
+}
+
+.field-column {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.field-column:last-child {
+  margin-right: 0px;
+}
+
+.add-project-button {
+  margin-top: 20px!important;
+}
+
+.svg {
+  margin-right: 6px!important;
+  margin-bottom: -6px!important;
+  height: 20px!important;
+  width: 20px!important;
+}

@@ -1,0 +1,33 @@
+.message {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 0px 24px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  line-height: 1.55em;
+  animation: message-appear 0.5s ease;
+  animation-delay: 0.1s;
+  animation-fill-mode: backwards;
+}
+
+.message::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.message-icon {
+  float: left;
+  width: 48px;
+}
+
+.message-text {
+  float: right;
+  padding-top: 2px;
+  width: calc(100% - 48px);
+}
+
+@keyframes message-appear {
+  from { opacity: 0; }
+  to { opacity: 0.7; }
+}

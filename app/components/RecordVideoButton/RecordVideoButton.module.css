@@ -1,0 +1,15 @@
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  padding-left: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.button-icon {
+  margin-right: 12px !important;
+}
+
+.divider {
+  margin: 24px 0 !important;
+}

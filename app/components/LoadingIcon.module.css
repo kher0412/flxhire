@@ -1,0 +1,12 @@
+.icon {
+  animation: icon-spin 1s linear infinite !important;
+}
+
+@keyframes icon-spin {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg) scaleX(-1);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 180deg) scaleX(-1);
+  }
+}

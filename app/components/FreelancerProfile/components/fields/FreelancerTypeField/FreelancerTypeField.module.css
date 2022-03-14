@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.error {
+  position: absolute;
+  top: calc(100% - 18px);
+  right: 48px;
+  color: rgb(244, 67, 54);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.edit {
+  display: inline-block !important;
+  margin-top: -14px !important;
+  margin-bottom: -14px !important;
+}

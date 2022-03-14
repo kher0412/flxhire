@@ -1,0 +1,11 @@
+.notification {
+  color: #777;
+
+  .info-icon {
+    fill: #777 !important;
+    height: 17px !important;
+    width: 17px !important;
+    margin-right: 5px;
+    margin-bottom: -3px;
+  }
+}

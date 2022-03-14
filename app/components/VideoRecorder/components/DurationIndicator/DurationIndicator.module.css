@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  bottom: 72px;
+  left: 0;
+  padding: 24px;
+  width: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  animation: container-appear 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .container {
+    bottom: 100px;
+  }
+}
+
+@keyframes container-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.track {
+  width: 100%;
+  height: 6px;
+  background: rgba(10, 10, 10, 0.3);
+  padding: 1px;
+}
+
+.fill,
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.fill {
+  background: #fff;
+}

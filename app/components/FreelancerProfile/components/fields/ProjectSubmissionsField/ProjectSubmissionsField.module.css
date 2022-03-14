@@ -1,0 +1,63 @@
+.container {
+  padding: 12px;
+}
+
+@media (min-width: 1048px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+.card,
+.card-action-area {
+  height: 100%;
+}
+
+.card-content {
+  height: calc(100% - 192px);
+}
+
+.screenshot {
+  background-color: rgb(220, 222, 226);
+  height: 192px;
+  position: relative;
+}
+
+.title {
+  /* margin-bottom: 12px; */
+  font-size: 17px;
+  /* font-weight: bold; */
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.25em;
+  margin-bottom: 12px;
+}
+
+.link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.placeholder {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 24px);
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.placeholder-icon {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.button-icon {
+  margin-right: 12px !important;
+}

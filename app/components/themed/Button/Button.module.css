@@ -1,0 +1,76 @@
+.button {
+  border-radius: 7px !important;
+  height: 38px;
+  min-width: 48px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+@media (max-width: 800px) {
+  .button {
+    height: 36px;
+    min-width: 36px !important;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+}
+
+.button, .button a {
+  text-decoration: none !important;
+}
+
+.button svg {
+  margin-right: 12px !important;
+}
+
+@media (max-width: 800px) {
+  .button svg {
+    margin-right: 9px !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+.responsiveIconWrapper,
+.responsiveIconWrapper * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button.iconOnly svg,
+.responsiveIconWrapper svg {
+  margin-right: 0 !important;
+}
+
+.button:hover svg {
+  animation: icon-pulse 0.4s ease;
+}
+
+@keyframes icon-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2871);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ delete buttons ~~~~~~~~~~~~~~~~~~~~~~ */
+
+.button.delete {
+  background: rgba(235, 111, 111, 0.1) !important;
+  color: #EB6F6F !important;
+}
+
+.button.delete:hover {
+  background: rgba(235, 111, 111, 0.26) !important;
+}
+
+.button.delete svg {
+  fill: #EB6F6F !important;
+}

@@ -1,0 +1,10 @@
+@media (min-width: 0px) and (max-width: 800px) {
+  .select-field {
+      flex: 1 0 0;
+  }
+}
+@media (min-width: 801px) and (max-width: 9999px) {
+  .select-field {
+      flex: 0.45 0 0;
+  }
+}

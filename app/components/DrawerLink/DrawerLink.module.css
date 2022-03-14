@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+}
+
+.link.active span {
+  color: #000!important;
+}
+
+.menu-item {
+  color: #777!important;
+}

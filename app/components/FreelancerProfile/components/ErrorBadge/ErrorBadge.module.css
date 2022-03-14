@@ -1,0 +1,29 @@
+.icon,
+.chip {
+  cursor: pointer;
+  margin-left: 6px !important;
+  margin-top: -2px !important;
+}
+
+.icon {
+  color: rgb(244, 67, 54);
+}
+
+.avatar {
+  width: 24px !important;
+  padding: 0 !important;
+  margin-right: -9px !important;
+  margin-left: -2px !important;
+}
+
+.chip,
+.avatar {
+  height: 24px !important;
+  background-color: rgb(244, 67, 54) !important;
+}
+
+@media (max-width: 500px) {
+  .avatar {
+    display: none !important;
+  }
+}

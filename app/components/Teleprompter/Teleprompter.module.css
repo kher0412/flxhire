@@ -1,0 +1,75 @@
+.teleprompter {
+
+  .title {
+    font-size: 16px;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+
+    .btn{
+      margin: 5px;
+    }
+
+    .label {
+      flex-grow: 1;
+      text-align: right;
+      font-size: 16px;
+    }
+
+    .slider {
+      flex-grow: 1;
+      flex-basis: 100px;
+      margin-right: 25px;
+    }
+  }
+
+  .display {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-color: #F2F2F2;
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+
+      .top {
+        flex-basis: 15px;
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+
+      .needle {
+        flex-basis: 65px;
+        display: flex;
+        align-items: center;
+        color: blue;
+      }
+
+      .bottom {
+        flex-grow: 1;
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    .text {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      padding: 25px 20px 50px 35px;
+      box-sizing: border-box;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      font-size: 25px;
+      line-height: 55px;
+      color: #141414;
+      border: solid;
+      border-width: thin;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.cell {
+  padding-top: calc((100% / 7) - 2px);
+  margin: 2px 0;
+  position: relative;
+  border: 1px solid transparent;
+}

@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1301;
+  width: 100%;
+  height: 4px;
+  cursor: wait;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: #fff;
+  transition: opacity 0.1s ease;
+}
+
+.container > div {
+  background: rgba(46, 203, 128, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.2s;
+  transition-delay: 0.1s;
+}

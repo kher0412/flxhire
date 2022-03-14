@@ -1,0 +1,27 @@
+.container {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 24px;
+  padding-left: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s ease !important;
+}
+
+.container:hover {
+  border-color: #2ECB80;
+}
+
+.container svg {
+  fill: #2ECB80;
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+
+.link {
+  text-decoration: none !important;
+}

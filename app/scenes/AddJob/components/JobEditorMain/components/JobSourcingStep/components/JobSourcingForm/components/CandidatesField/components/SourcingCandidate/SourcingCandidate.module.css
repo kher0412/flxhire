@@ -1,0 +1,30 @@
+.container {
+  margin-bottom: 24px;
+  border: 2px solid #E0E9F2;
+  border-radius: 8px;
+  transition: opacity 0.32s ease;
+}
+
+.container:hover {
+  opacity: 1 !important;
+}
+
+.container > * {
+  margin-top: -12px;
+}
+
+.mismatch {
+  max-width: 400px;
+  padding-left: 6px;
+  color: #8CA4BA;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .mismatch {
+    display: none;
+  }
+}

@@ -1,0 +1,5 @@
+.container {
+  overflow: visible !important;
+  position: relative;
+  border-radius: 0 !important;
+}

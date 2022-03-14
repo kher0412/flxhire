@@ -1,0 +1,9 @@
+.container {
+  border-top: 1px solid rgba(177, 197, 218, 0.05);
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.container:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

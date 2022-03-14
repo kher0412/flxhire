@@ -1,0 +1,15 @@
+.substep,
+.substep * {
+  font-size: 14px !important;
+}
+
+.subconnector {
+  margin-left: 7px !important;
+  padding-bottom: 6px !important;
+  padding-top: 6px !important;
+}
+
+.subconnector span {
+  min-height: 6px !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}

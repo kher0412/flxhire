@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-grow: 1;
+  z-index: 3;
+  flex-direction: column;
+  animation: item-appear 0.5s cubic-bezier(0.7, 0, 0, 1);
+  transform-origin: top center;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.form {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    margin: 0;
+    padding-left: 12px;
+    line-height: 48px;
+    height: 48px;
+    vertical-align: middle;
+  }
+}
+
+@keyframes item-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

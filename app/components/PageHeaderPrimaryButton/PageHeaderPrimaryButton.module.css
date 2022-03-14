@@ -1,0 +1,78 @@
+.button {
+  position: relative;
+  border-color: rgba(255, 255, 255, 0) !important;
+  animation: block-appear 0.6s cubic-bezier(1, 0, 0, 1) 0.5s backwards;
+  transform-origin: center top;
+  height: 60px !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  max-width: calc(100% - 12px) !important;
+}
+
+.button,
+.button > * {
+  font-size: 18px !important;
+  letter-spacing: 2px !important;
+  color: #fff !important;
+  transition: all 0.4s ease !important;
+}
+
+.button > * {
+  z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .button,
+  .button > * {
+    font-size: 18px !important;
+  }
+}
+
+.button::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: -1px;
+  top: -1px;
+  z-index: 0;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  pointer-events: none;
+  background-color: #35CC84;
+  box-shadow: 1px 4px 16px rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-property: opacity, transform, border-radius;
+}
+
+.button:hover {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.button:hover,
+.button:hover > * {
+  color: #fff !important;
+}
+
+.button:hover::after {
+  opacity: 0;
+  transform: scale(1.125, 1.75);
+}
+
+@keyframes block-appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

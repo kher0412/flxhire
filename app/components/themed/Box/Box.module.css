@@ -1,0 +1,27 @@
+.box,
+.box.default {
+  padding: 24px;
+}
+
+.box.wide {
+  padding: 24px 48px;
+}
+
+.box.compact {
+  padding: 12px;
+}
+
+@media (max-width: 900px) {
+  .box,
+  .box.wide {
+    padding: 12px;
+  }
+}
+
+.box.noPadTop {
+  padding-top: 0;
+}
+
+.box.noPadBottom {
+  padding-bottom: 0;
+}

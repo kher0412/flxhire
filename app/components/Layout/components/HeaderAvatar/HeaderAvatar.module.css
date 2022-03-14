@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 32px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 18px;
+  margin: 1px;
+  border: 2px solid #fff;
+}
+
+.name {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
+
+.clientName {
+  text-transform: uppercase;
+  color: #04041E;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.expand-more {
+  cursor: pointer;
+  color: white;
+}
+
+.expand-more-black {
+  cursor: pointer;
+  color: black;
+}
+
+.popover {
+  margin-top: 12px!important;
+}
+
+.logout {
+  cursor: pointer;
+  color: #666F80;
+}
+
+@media (max-width: 1200px) {
+  .container > .name { display: none }
+}

@@ -1,0 +1,175 @@
+@media (min-width: 0px) and (max-width: 800px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .tab-title {
+      font-size: 24px;
+  }
+
+  .tab-description {
+      font-size: 14px;
+  }
+
+  .leader {
+      flex-direction: column;
+  }
+
+  .tab {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 9999px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .tab-title {
+    margin: 10px;
+    font-size: 28px;
+  }
+
+  .tab-description {
+    font-size: 27px;
+  }
+
+  .leader {
+    flex-direction: row;
+  }
+
+  .tab {
+    font-size: 14px;
+  }
+}
+
+.how-it-works-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  padding: 50px 15px;
+}
+
+.title {
+  display: flex;
+
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.description {
+  margin: 20px 20px;
+  display: flex;
+}
+
+.avatar {
+  width: 100px !important;
+  height: 100px !important;
+  margin: 0 24px auto auto;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  animation: avatar-appear 0.5s cubic-bezier(0.7, 0, 0, 1);
+  animation-delay: 0.16s;
+  animation-fill-mode: backwards;
+  z-index: 3;
+}
+
+.founder{
+  font-size: 13px;
+  padding-top: 12px;
+}
+
+.leader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  flex: 1;
+  min-width: 0;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 10px;
+}
+
+.question {
+  flex: 1 1 auto;
+  padding: 10px 30px;
+}
+
+.q {
+  font-size: 20px;
+  margin: 10px 5px;
+}
+
+.a {
+  flex: 1 1 auto;
+  margin: 10px 5px;
+}
+
+.container {
+  padding: 144px 48px 48px 48px;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 48px;
+}
+
+@media (max-width: 1160px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 12px;
+  }
+
+  .content {
+    padding: 12px;
+  }
+}
+
+.text {
+  line-height: 34px;
+  padding-top: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #8E97A3;
+}
+
+.heading {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 48px 0;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 30px;
+    margin: 12px 0 36px 0;
+  }
+}

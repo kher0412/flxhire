@@ -1,0 +1,75 @@
+.stepper {
+  background-color: transparent !important;
+  max-width: 600px !important;
+  margin-top: -12px !important;
+}
+
+.step-label-text {
+  color: #fff;
+}
+
+.step-label {
+  opacity: 0.6;
+  position: relative;
+}
+
+.step-label.current {
+  opacity: 1;
+}
+
+.step-label.completed,
+.step-label.completed svg {
+  fill: #fff !important;
+}
+
+.step-label svg circle {
+  fill: #fff !important;
+}
+
+.step-label svg text {
+  fill: #0033cc !important;
+}
+
+.step-content {
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+@media (max-width: 999px) {
+  .step-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* triangle above step content card */
+.step-content-open .step-label.current > span:first-of-type::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(100% - 8px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fff transparent;
+  pointer-events: none;
+  animation: arrow-appear 0.2s ease;
+}
+
+@media (min-width: 501px) {
+  .step-content-open .step-label.current > span:first-of-type::after {
+    left: 18px;
+  }
+}
+
+@keyframes arrow-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

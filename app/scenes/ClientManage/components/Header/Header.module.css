@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+}
+
+.header-title-wrapper {
+  margin-right: 9px;
+  display: inline-block;
+}
+
+.stepper {
+  border-radius: 4px;
+  background: none !important;
+}

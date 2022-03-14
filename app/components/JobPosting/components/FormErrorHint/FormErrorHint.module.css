@@ -1,0 +1,11 @@
+.container {
+  color: #f44336;
+  font-size: 14px;
+  animation: appear 0.5s ease;
+  margin-bottom: 12px;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

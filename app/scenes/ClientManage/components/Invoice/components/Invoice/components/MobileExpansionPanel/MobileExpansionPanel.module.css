@@ -1,0 +1,74 @@
+.panel {
+  box-shadow: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.panel::before {
+  display: none !important;
+}
+
+.summary {
+  color: #93A6BA !important;
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+  transition-duration: 338ms !important;
+}
+
+.summary svg {
+  height: 24px;
+  width: 24px;
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.summary svg * {
+  fill: #93A6BA !important;
+}
+
+.summary,
+.summary * {
+  vertical-align: middle;
+}
+
+.details {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.chip {
+  margin-top: -2px !important;
+  margin-left: 4px !important;
+  height: 22px !important;
+  animation: chip-appear 0.2s ease;
+}
+
+@media (max-width: 800px) {
+  .chip {
+    margin-top: -4px !important;
+  }
+}
+
+.chip > * {
+  color: #fff !important;
+  font-weight: 500 !important;
+  padding: 0 7px 0 8px !important;
+}
+
+@keyframes chip-appear {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.chevron {
+  margin-left: auto;
+  transition: transform 0.4s ease;
+  margin-right: 0 !important;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100vw - 96px);
+}

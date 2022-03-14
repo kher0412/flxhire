@@ -1,0 +1,8 @@
+.critical-confirm,
+.critical-confirm-disabled {
+  transition: color 0.4s ease;
+}
+
+.critical-confirm {
+  color: rgb(205, 0, 0) !important;
+}

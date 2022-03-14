@@ -1,0 +1,13 @@
+.tabLink {
+  text-decoration: none;
+  color: #333;
+}
+
+.tab {
+  border-bottom: none !important;
+}
+
+.tab,
+.tab * {
+  white-space: nowrap;
+}

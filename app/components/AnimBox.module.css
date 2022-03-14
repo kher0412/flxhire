@@ -1,0 +1,3 @@
+.animbox-hidden * {
+  animation: none !important;
+}

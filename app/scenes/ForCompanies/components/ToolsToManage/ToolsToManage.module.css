@@ -1,0 +1,54 @@
+.container {
+  padding: 48px;
+  margin-top: 48px;
+}
+
+.content {
+  padding: 48px;
+  padding-left: 144px;
+}
+
+@media (max-width: 1160px) {
+  .container {
+    padding: 24px;
+  }
+
+  .content {
+    padding-left: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 24px 12px;
+  }
+
+  .content {
+    padding: 12px;
+    padding-left: 12px;
+  }
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 48px 0;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 30px;
+    margin: 12px 0 36px 0;
+  }
+}
+
+.graphic {
+  padding-top: 48px;
+}
+
+.divider {
+  width: 600px;
+  margin: 144px auto;
+  background-color: rgba(0, 0, 0, 0.14);
+  height: 2px;
+}

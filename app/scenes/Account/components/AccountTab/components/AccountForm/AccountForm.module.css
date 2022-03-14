@@ -1,0 +1,7 @@
+.buttons {
+  display: flex;
+}
+
+.logo > div {
+  align-items: center !important;
+}

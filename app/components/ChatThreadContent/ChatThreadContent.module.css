@@ -1,0 +1,40 @@
+.thread-content {
+  display: flex;
+  height: 100%;
+}
+
+.thread-aside {
+  padding-left: 24px;
+  max-width: 250px;
+}
+
+@media(max-width: 751px) {
+  .thread-aside {
+    display: none;
+  }
+}
+
+.messages-container {
+  max-height: 100%;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.messages-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  height: min-content;
+  min-height: 100%;
+  padding: 0 10px; /* aligns nicely with dialog actions */
+}
+
+.messages-content > *:first-child {
+  margin-top: 0 !important;
+}
+
+.messages-content > * {
+  margin-top: 12px;
+  height: 100%;
+}

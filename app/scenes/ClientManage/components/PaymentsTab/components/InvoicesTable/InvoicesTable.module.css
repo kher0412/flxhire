@@ -1,0 +1,60 @@
+.paper {
+  margin-bottom: 24px;
+}
+
+.status {
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+
+.pending {
+  color: #F5B861 !important;
+}
+
+.paid {
+  color: #5FCA50 !important;
+}
+
+.void {
+  color: #F50057 !important;
+}
+
+.overdue {
+  color: #F50057 !important;
+}
+
+.payment_processing {
+  color: #F5B861 !important;
+}
+
+.not_requested {
+  color: #F5B861 !important;
+}
+
+.requested {
+  color: #283593 !important;
+}
+
+.client_query {
+  color: #ffb800 !important;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.details span {
+  flex: 1 0 auto;
+  text-align: left;
+}
+
+.invoicesTags span {
+  vertical-align: unset;
+}
+
+.invoiceFirstTag::after {
+  content: unset !important;
+}

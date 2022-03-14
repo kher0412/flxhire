@@ -1,0 +1,36 @@
+.container {
+  font-weight: 500;
+  font-size: 21px;
+  padding: 0 24px;
+  margin: 36px 0 0 0;
+  line-height: 1.75em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.icon-button {
+  margin: -9px 0 !important;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.placeholder {
+  opacity: 0.5;
+}
+
+.input,
+.input * {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+.input {
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+  width: 200px !important;
+  max-width: 100% !important;
+}

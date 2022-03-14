@@ -1,0 +1,42 @@
+.stepper {
+  background-color: transparent !important;
+}
+
+.step-label-text {
+  color: #fff;
+}
+
+.step-label {
+  opacity: 0.6;
+  position: relative;
+}
+
+.step-label.current {
+  opacity: 1;
+}
+
+.step-label.completed,
+.step-label.completed svg {
+  fill: #fff !important;
+}
+
+.step-label svg circle {
+  fill: #fff !important;
+}
+
+.step-label svg text {
+  fill: #0033cc !important;
+}
+
+.step-content {
+  display: inline-block;
+  /* color: #fff; */
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  padding: 24px 24px 24px 36px;
+}
+
+.step-content-text {
+  margin-bottom: 24px;
+}

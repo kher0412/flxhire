@@ -1,0 +1,48 @@
+.container {
+  margin: 0 0 144px 0;
+}
+
+@media (max-width: 1110px) {
+  .container {
+    display: none;
+  }
+}
+
+.slider {
+  padding-left: 48px;
+}
+
+.sliderWrapper {
+  margin: 0 auto;
+  width: 512px;
+}
+
+.content {
+  padding: 48px;
+  animation: content-appear 1s cubic-bezier(0.6, 0, 0, 1);
+}
+
+.heading {
+  font-size: 38px;
+  font-weight: 400;
+  margin: 24px 0;
+}
+
+.text {
+  line-height: 34px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #8E97A3;
+}
+
+@keyframes content-appear {
+  from {
+    opacity: 0;
+    transform: translateY(48px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

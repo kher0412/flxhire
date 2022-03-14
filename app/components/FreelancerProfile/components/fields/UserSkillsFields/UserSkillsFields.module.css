@@ -1,0 +1,63 @@
+.skills-title {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 30px 0 14px 0;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+  animation: name-type-appear 0.5s ease-out 0.55s;
+  animation-fill-mode: backwards;
+}
+
+.skills {
+  text-align: center;
+  margin: 24px auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 800px) {
+  .skills {
+    max-width: calc(100% - 96px);
+  }
+}
+
+.years {
+  padding: 24px 0;
+}
+
+.experience-slider {
+  margin: 24px 0;
+  font-size: 14px;
+  animation: exp-slider-appear 0.4s ease;
+}
+
+@keyframes exp-slider-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slider-control-wrapper > * > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.error {
+  color: rgb(244, 67, 54);
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.edit {
+  margin-top: -6px !important;
+  margin-bottom: -6px !important;
+  margin-left: 0px !important;
+  vertical-align: top !important;
+}
+
+.skillsWrapper {
+  margin-bottom: -5px;
+}

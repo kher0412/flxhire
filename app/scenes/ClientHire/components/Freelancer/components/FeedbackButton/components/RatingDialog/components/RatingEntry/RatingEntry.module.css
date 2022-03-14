@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.name {
+  color: #333333;
+  font-weight: 600;
+}
+
+.date {
+  margin-left: auto;
+  color: #9DB7D6;
+}
+
+.date,
+.date * {
+  vertical-align: middle;
+}
+
+.date svg {
+  margin: -6px 6px 0 0;
+}
+
+.rating {
+  margin-left: 24px;
+}
+
+.rating svg {
+  margin-top: -3px;
+}
+
+.text {
+  color: #333333;
+  font-size: 17px;
+  line-height: 32px;
+}

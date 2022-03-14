@@ -1,0 +1,95 @@
+.container {
+  position: fixed;
+  overflow: hidden;
+  line-height: 2em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+  background: radial-gradient(circle at center, #555 0%, #333 70%);
+  /* background: radial-gradient(circle at center, #3399ff 0%, #0033cc 70%); */
+  z-index: 1000;
+  transform-origin: center center;
+  animation: open 0.75s cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes open {
+  0% {
+    transform: scale3d(0, 0, 1);
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  65% {
+    transform: scale3d(1, 1, 1);
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+    background: radial-gradient(circle at center, #555 0%, #333 70%);
+  }
+}
+
+.bottom-area {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  transition: opacity 1s ease;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.6);
+}
+
+.bottom-area-content {
+  padding: 12px 18px;
+}
+
+.bottom-area-content,
+.bottom-area-content > * {
+  vertical-align: middle;
+}
+
+.primary-actions {
+  text-align: center;
+}
+
+.primary-action {
+  background-color: rgb(0, 51, 204) !important;
+  color: #fff !important;
+}
+
+@media (max-width: 1450px) {
+  .primary-actions > * {
+    margin-top: 4px !important;
+    width: 100%;
+    border-top-left-radius: 999px !important;
+    border-bottom-left-radius: 999px !important;
+    border-top-right-radius: 999px !important;
+    border-bottom-right-radius: 999px !important;
+  }
+}
+
+@media (min-width: 1451px) {
+  .primary-actions > * {
+    height: 48px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+.primary-actions > :first-of-type {
+  border-top-left-radius: 999px !important;
+  border-bottom-left-radius: 999px !important;
+}
+
+.primary-actions > :last-of-type {
+  border-top-right-radius: 999px !important;
+  border-bottom-right-radius: 999px !important;
+}
+
+.button-icon {
+  margin-right: 12px !important;
+}

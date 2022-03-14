@@ -1,0 +1,152 @@
+.container {
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  padding: 0 12px;
+  width: 72px;
+}
+
+.wrapper {
+  transition: opacity 0.2s ease;
+}
+
+.container:hover .wrapper {
+  opacity: 1 !important;
+}
+
+.icon {
+  position: relative;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.24s ease, transform 0.24s ease, background 0.24s ease;
+}
+
+/* .container:hover .icon::after, */
+.icon.active::after,
+.light:hover .icon::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.light:hover .icon::after {
+  opacity: 0.14;
+  background: #B1C5DA;
+}
+
+.light .icon.active::after {
+  opacity: 0.1;
+  background: #2ecb80;
+}
+
+.contentWrapper {
+  position: relative;
+  margin: 12px -12px 0 -12px;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.light .content {
+  color: #93A6BA !important;
+}
+
+.light .content.active {
+  color: #333333 !important;
+}
+
+.light svg * {
+  fill: #B1C5DA !important;
+  transition: fill 0.2s ease;
+}
+
+.light .icon.active svg * {
+  fill: #2ECB80 !important;
+}
+
+.connector {
+  width: 100%;
+  margin: 36px 12px;
+  box-sizing: border-box;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.light.connector {
+  background: rgba(0, 0, 0, 0.12) !important;
+}
+
+.connector:last-child {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: auto;
+  }
+
+  .icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+  }
+
+  .icon * {
+    max-width: 36px !important;
+  }
+
+  .content {
+    white-space: normal;
+    position: static;
+    width: auto;
+    text-align: center;
+    transform: none;
+    font-size: 14px;
+  }
+
+  .connector {
+    margin: 36px 0;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #F50057;
+  border-radius: 999px;
+}

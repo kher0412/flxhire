@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+}
+
+.edit {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 10;
+  pointer-events: all;
+}
+
+.error {
+  position: absolute;
+  z-index: 4; /* needs to be visible over the map and popover */
+  top: 54px;
+  left: 12px;
+  color: rgb(244, 67, 54);
+}
+
+@media (max-width: 800px) {
+  .edit,
+  .error {
+    left: 12px;
+    max-width: calc(100% - 48px);
+    text-align: left;;
+  }
+
+  .edit {
+    top: 12px;
+  }
+
+  .error {
+    top: 60px;
+  }
+
+  .map,
+  .map * {
+    pointer-events: none;
+  }
+}

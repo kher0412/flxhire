@@ -1,0 +1,23 @@
+/* eslint-disable max-len */
+import React from 'react'
+
+export interface IQuestionsIconProps {
+}
+
+export interface IQuestionsIconState {
+}
+
+export default class QuestionsIcon extends React.Component<IQuestionsIconProps, IQuestionsIconState> {
+  shouldComponentUpdate() {
+    return false
+  }
+
+  render() {
+    return (
+      <svg width="48" height="48" viewBox="0 0 28 47" fill="none">
+        <path d="M15.7848 31.8335V34.11H11.2318V31.8335C11.2318 25.6694 14.9209 22.5337 17.9589 19.9599L17.9589 19.9598C19.445 18.6995 20.6713 17.6186 21.5216 16.4185C22.3802 15.2068 22.8536 13.8775 22.8536 12.127C22.8536 10.6486 22.2954 8.81886 20.9707 7.35614C19.64 5.88666 17.5495 4.80294 14.5189 4.80294V4.80281L14.511 4.80306C10.4529 4.9307 6.53119 6.28634 3.26252 8.68771L0.751533 4.90986C4.74578 1.96791 9.5573 0.338405 14.5211 0.25C22.9058 0.251078 27.4065 6.37871 27.4065 12.127C27.4065 17.9109 23.8429 20.9409 20.9028 23.4328L20.9027 23.4329L20.8676 23.4627C18.0846 25.8237 15.7848 27.7748 15.7848 31.8335Z" fill="#2ECB80" stroke="white" strokeWidth="0.5" />
+        <path d="M17.3005 42.4447C17.3005 44.5392 15.6026 46.237 13.5082 46.237C11.4137 46.237 9.71582 44.5392 9.71582 42.4447C9.71582 40.3502 11.4137 38.6523 13.5082 38.6523C15.6026 38.6523 17.3005 40.3502 17.3005 42.4447Z" fill="#2ECB80" stroke="white" strokeWidth="0.5" />
+      </svg>
+    )
+  }
+}

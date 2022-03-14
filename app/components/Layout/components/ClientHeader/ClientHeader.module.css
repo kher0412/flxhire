@@ -1,0 +1,30 @@
+.appBar {
+  width: 100%;
+  margin-left: 0px;
+  transition-property: margin, width !important;
+  transition-duration: 0.2s !important;
+  transition-timing-function: ease-in !important;
+  transition-delay: 0s !important;
+
+  background-color: white !important;
+  color: black !important;
+  height: 72px;
+  padding-top: 10px;
+}
+
+.appBarShift {
+  width: calc(100% - 288px) !important;
+  margin-left: 288px;
+  transition-property: margin, width !important;
+  transition-duration: 0.2s !important;
+  transition-timing-function: ease-out !important;
+  transition-delay: 0s !important;
+}
+
+.menuButton {
+  margin-right: 16px !important;
+}
+
+.hide {
+  display: none !important;
+}

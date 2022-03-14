@@ -1,0 +1,38 @@
+.container {
+  display: inline-block;
+  font-size: 32px;
+  padding-bottom: 6px;
+}
+
+.text {
+  margin-top: 24px !important;
+}
+
+.icon-button {
+  margin-top: -12px !important;
+  margin-bottom: -12px !important;
+  margin-left: 12px !important;
+}
+
+.list-item-text {
+  flex-grow: 0 !important;
+}
+
+.edit-button {
+  margin-left: 12px !important;
+}
+
+.icon {
+  min-width: 48px !important;
+}
+
+@media (max-width: 500px) {
+  .item {
+    padding-right: 0 !important;
+  }
+
+  .icon {
+    min-width: 42px !important;
+    margin-left: -18px !important;
+  }
+}

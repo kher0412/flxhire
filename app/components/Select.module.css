@@ -1,0 +1,8 @@
+.select {
+    width: 100%;
+}
+
+.select > div,
+.select label {
+  font-size: 1rem;
+}

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  margin: 48px 0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 43px;
+  text-align: center;
+  font-weight: 400;
+  margin: 48px 0;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 36px;
+    margin: 36px 0;
+  }
+}

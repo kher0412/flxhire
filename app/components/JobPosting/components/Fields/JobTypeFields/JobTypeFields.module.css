@@ -1,0 +1,36 @@
+.text {
+  margin-top: 24px !important;
+}
+
+.list-item-text {
+  flex-grow: 0 !important;
+}
+
+.edit-button {
+  margin-left: 12px !important;
+}
+
+.primary-text {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1em;
+}
+
+.icon {
+  min-width: 48px !important;
+}
+
+@media (max-width: 500px) {
+  .item {
+    padding-right: 0 !important;
+  }
+
+  .icon {
+    min-width: 42px !important;
+    margin-left: -18px !important;
+  }
+}

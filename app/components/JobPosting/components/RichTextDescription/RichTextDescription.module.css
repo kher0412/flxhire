@@ -1,0 +1,69 @@
+.text-description {
+  font-size: 15px;
+  padding: 0 24px;
+  margin: 36px 0;
+  line-height: 1.75em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 999px) {
+  .text-description {
+    padding: 0 12px;
+    margin: 24px 0;
+  }
+}
+
+.text-description p + p {
+  margin-top: 24px;
+}
+
+.content-list-item-text {
+  font-size: 15px;
+}
+
+.content-list-item-icon {
+  position: relative;
+  background-color: rgba(51, 153, 255, 0.08);
+  box-shadow: 0 0 0 6px  rgba(51, 153, 255, 0.08);
+  border-radius: 100%;
+  opacity: 0.9;
+  min-width: 24px !important;
+  margin-right: 21px;
+}
+
+.content-list-item-icon,
+.content-list-item-icon * {
+  color: #0033cc;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 24px;
+  margin-top: 48px;
+}
+
+.content {
+  padding: 0;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.content p:first-child,
+.content h1:first-child,
+.content h2:first-child,
+.content h3:first-child,
+.content h4:first-child,
+.content h5:first-child,
+.content h6:first-child,
+.content ul:first-child,
+.content ol:first-child {
+  margin-top: 0 !important;
+}

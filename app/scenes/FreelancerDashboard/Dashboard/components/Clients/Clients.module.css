@@ -1,0 +1,40 @@
+.container {
+  height: 100%;
+}
+
+.title {
+  font-size: 18px !important;
+}
+
+.letter-avatar {
+  background: rgb(63, 81, 181) !important;
+  color: #fff !important;
+}
+
+@media (min-width: 800px) {
+  .list {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.item {
+  padding-left: 12px !important;
+}
+
+.placeholder-container {
+  position: relative;
+  height: 100%;
+  min-height: 100px;
+}
+
+.placeholder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5em;
+}

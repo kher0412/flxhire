@@ -1,0 +1,15 @@
+.user-skills-collection {
+  position: relative;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-height: 37px;
+}
+
+.show-more-button {
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  color: rgb(0, 51, 204);
+}

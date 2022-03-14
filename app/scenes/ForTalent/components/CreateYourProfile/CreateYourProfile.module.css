@@ -1,0 +1,50 @@
+.container {
+  padding: 144px 48px 48px 48px;
+}
+
+.content {
+  padding: 48px;
+  padding-left: 144px;
+}
+
+@media (max-width: 1160px) {
+  .container {
+    padding: 48px;
+  }
+
+  .content {
+    padding-left: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 12px;
+  }
+
+  .content {
+    padding: 12px;
+    padding-left: 12px;
+  }
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 36px 0;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 30px;
+    margin: 12px 0 36px 0;
+  }
+}
+
+.text {
+  line-height: 34px;
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #8E97A3;
+}

@@ -1,0 +1,92 @@
+.container {
+  padding: 2px !important;
+  overflow: visible !important;
+}
+
+.container.clickable {
+  padding: 0 !important;
+  transition: border 0.3s ease !important;
+  border: 2px solid transparent !important;
+  cursor: pointer;
+}
+
+.container.clickable:hover {
+  border-color: #2ECB80 !important;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+}
+
+.icon > * {
+  width: 48px !important;
+  height: 48px !important;
+  box-sizing: border-box !important;
+}
+
+.content {
+  width: calc(100% - 102px);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 2px;
+  font-weight: 300;
+}
+
+.text strong {
+  font-weight: bold;
+  color: #2ECB80;
+}
+
+.title,
+.text {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1em;
+}
+
+.wrapper svg {
+  width: 48px;
+  height: 48px;
+}
+
+.wrapper svg * {
+  fill: #B1C5DA;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.highlight {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  width: 24px !important;
+  height: 24px !important;
+  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.2));
+}
+
+.highlight * {
+  fill: #F50057 !important;
+}

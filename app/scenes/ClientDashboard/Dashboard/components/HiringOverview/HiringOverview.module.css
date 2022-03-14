@@ -1,0 +1,148 @@
+.content {
+  margin-top: 60px;
+}
+
+.header {
+  color: #333333;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.switch {
+  margin-top: -6px;
+  margin-bottom: -6px;
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  .content {
+    margin-top: 12px;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding: 18px 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.chip {
+  margin-top: -2px !important;
+  margin-left: 6px !important;
+  height: 22px !important;
+  animation: chip-appear 0.2s ease;
+}
+
+@media (max-width: 800px) {
+  .chip {
+    margin-top: -4px !important;
+  }
+}
+
+.chip > * {
+  color: #fff !important;
+  font-weight: 500 !important;
+  padding: 0 7px 0 8px !important;
+}
+
+@keyframes chip-appear {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+/* .list is used by child components by importing this module */
+.list > * {
+  animation: item-appear 0.24s ease backwards;
+  animation-delay: 0.32s;
+}
+
+.list > *:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.list > *:nth-child(2) {
+  animation-delay: 0.06s;
+}
+
+.list > *:nth-child(3) {
+  animation-delay: 0.12s;
+}
+
+.list > *:nth-child(4) {
+  animation-delay: 0.18s;
+}
+
+.list > *:nth-child(5) {
+  animation-delay: 0.24s;
+}
+
+@keyframes item-appear {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.panel {
+  box-shadow: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.panel::before {
+  display: none !important;
+}
+
+.summary {
+  color: #93A6BA !important;
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+  padding: 6px 24px !important;
+}
+
+.summary * {
+  display: block;
+}
+
+.summary svg {
+  height: 24px;
+  width: 24px;
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.summary svg * {
+  fill: #93A6BA !important;
+}
+
+.summary,
+.summary * {
+  vertical-align: middle;
+}
+
+.details {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}

@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+.container.error * {
+  border-color: #f44336 !important;
+}
+
+.container > *:not(:first-child) {
+  margin-left: -1px !important;
+}
+
+.container > *:not(:first-child),
+.container > *:not(:first-child) > *,
+.container > *:not(:first-child) > * > * {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.container > *:not(:last-child) {
+  margin-right: -1px !important;
+}
+
+.container > *:not(:last-child),
+.container > *:not(:last-child) > *,
+.container > *:not(:last-child) > * > * {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.container > * {
+  flex-grow: 1 !important;
+  min-width: auto !important;
+  position: relative;
+  z-index: 2;
+}

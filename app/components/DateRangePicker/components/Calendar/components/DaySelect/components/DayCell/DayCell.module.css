@@ -1,0 +1,13 @@
+.day-cell {
+  width: calc( 100% * 0.14285714285714285 - 0px );
+  padding-top: calc((100% / 7) - 2px);
+  margin: 2px 0;
+  position: relative;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.day-cell:hover {
+  background-color: #ebebeb !important;
+}

@@ -1,0 +1,21 @@
+.container {
+  margin-top: -72px; /* ghetto solution to aligning the user widget... it should be portaled instead or something */
+  background: white;
+  border-bottom: 1px solid #E0E9F2;
+}
+
+.breadcrumbLink {
+  text-decoration: none;
+  color: #96ADC6;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 0px;
+  }
+}

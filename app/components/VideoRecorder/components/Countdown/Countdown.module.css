@@ -1,0 +1,55 @@
+.container {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  padding: 48px;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: scaleX(-1);
+}
+
+.count {
+  font-size: 96px;
+  color: #fff;
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.1),
+    -1px 1px 0 rgba(0, 0, 0, 0.1),
+    1px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px -1px 0 rgba(0, 0, 0, 0.1),
+    0px 1px 0 rgba(0, 0, 0, 0.1),
+    0px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px 0px 0 rgba(0, 0, 0, 0.1),
+    1px 0px 0 rgba(0, 0, 0, 0.1),
+    2px 2px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 0 rgba(0, 0, 0, 0.1),
+    2px -2px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 0 rgba(0, 0, 0, 0.1),
+    0px 2px 0 rgba(0, 0, 0, 0.1),
+    0px -2px 0 rgba(0, 0, 0, 0.1),
+    -2px 0px 0 rgba(0, 0, 0, 0.1),
+    2px 0px 0 rgba(0, 0, 0, 0.1),
+    1px 2px 0 rgba(0, 0, 0, 0.1),
+    -1px 2px 0 rgba(0, 0, 0, 0.1),
+    1px -2px 0 rgba(0, 0, 0, 0.1),
+    -1px -2px 0 rgba(0, 0, 0, 0.1),
+    2px 1px 0 rgba(0, 0, 0, 0.1),
+    -2px 1px 0 rgba(0, 0, 0, 0.1),
+    2px -1px 0 rgba(0, 0, 0, 0.1),
+    -2px -1px 0 rgba(0, 0, 0, 0.1);
+
+  filter: drop-shadow(0 0 32px #000);
+}

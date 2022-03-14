@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  overflow: visible !important;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  background: rgb(63, 81, 181) !important;
+  color: #fff !important;
+  transform: translateX(-6px);
+}
+
+.title {
+  font-size: 18px !important;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.new {
+  color: rgb(0, 175, 0);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.availability {
+  display: inline-block;
+  margin-left: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+  padding: 12px 24px !important;
+}
+
+.offer-note {
+  padding: 18px 24px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.website-url {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.item {
+  align-items: flex-start !important;
+  animation: item-appear 0.5s cubic-bezier(0.7, 0, 0, 1) backwards;
+  transform-origin: top right;
+  animation-delay: 0.7s;
+}
+
+.item:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+
+.item:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.item:nth-of-type(3) {
+  animation-delay: 0.5s;
+}
+
+.item:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes item-appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

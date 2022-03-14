@@ -1,0 +1,53 @@
+.sandwich {
+  display: inline-block;
+  margin-left: -6px !important;
+  margin-right: -3px !important;
+}
+
+@media (min-width: 1300px) {
+  .sandwich { display: none !important; }
+}
+
+.drawer-link { text-decoration: none; }
+
+.navigation {
+  width: 100%;
+}
+
+.navigation.alternative,
+.navigation.alternative :not(:global(.MuiBadge-badge)) {
+  color: #333333 !important;
+}
+
+.sandwich svg {
+  color: white
+}
+
+.bar {
+  transition: background-color 0.6s ease !important;
+  box-shadow: none !important;
+}
+
+@media (min-width: 1101px) {
+  .bar,
+  .bar > * {
+    height: 94px !important;
+  }
+}
+
+.logo {
+  margin-top: -1px;
+  padding-right: 24px;
+  padding-left: 12px;
+  transition: filter 0.6s ease;
+}
+
+@media (min-width: 1124px) {
+  .logo {
+    padding-right: 72px;
+  }
+}
+
+.sidebarButtonContainer * {
+  color: #fff !important;
+}

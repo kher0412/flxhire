@@ -1,0 +1,12 @@
+.container {
+  height: 100%;
+}
+
+.title {
+  font-size: 18px !important;
+}
+
+.chart {
+  padding: 12px;
+  padding-bottom: 24px;
+}

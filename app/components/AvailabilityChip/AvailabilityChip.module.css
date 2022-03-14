@@ -1,0 +1,38 @@
+.availability {
+  text-transform: uppercase;
+  padding: 9px;
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.available_now {
+  border: 1px solid #5FCA50;
+  color: #5FCA50;
+}
+
+.available_soon {
+  border: 1px solid #F5B861;
+  color: #F5B861;
+}
+
+.not_available {
+  border: 1px solid #F50057;
+  color: #F50057;
+}
+
+.working {
+  border: 1px solid #3F51B5;
+  color: #3F51B5;
+}
+
+.disabled {
+  border: 1px solid #999;
+  color: #999;
+}

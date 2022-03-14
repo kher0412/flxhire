@@ -1,0 +1,121 @@
+.header-content {
+  margin: auto;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0 !important;
+  padding-top: 96px !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.title {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 30px;
+  animation: block-appear 0.6s cubic-bezier(1, 0, 0, 1);
+  transform-origin: center top;
+}
+
+.subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 12px;
+  animation: block-appear 0.6s cubic-bezier(1, 0, 0, 1) 0.25s backwards;
+  transform-origin: center top;
+}
+
+@media (min-width: 801px) {
+  .freelancer-signup {
+    display: none;
+  }
+}
+
+.button {
+  position: relative;
+  border-color: rgba(255, 255, 255, 0) !important;
+  animation: block-appear 0.6s cubic-bezier(1, 0, 0, 1) 0.5s backwards;
+  transform-origin: center top;
+}
+
+.button,
+.button > * {
+  font-size: 18px !important;
+  color: #fff !important;
+  transition: all 0.4s ease !important;
+}
+
+.button > * {
+  z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .button,
+  .button > * {
+    font-size: 18px !important;
+  }
+}
+
+.button::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: -1px;
+  top: -1px;
+  z-index: 0;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  pointer-events: none;
+  background-color: #38C88A;
+  box-shadow: 1px 4px 16px rgba(0, 0, 0, 0.3);
+
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-property: opacity, transform, border-radius;
+}
+
+.button:hover {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.button:hover,
+.button:hover > * {
+  color: #fff !important;
+}
+
+.button:hover::after {
+  opacity: 0;
+  transform: scale(1.125, 1.75);
+}
+
+@keyframes block-appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

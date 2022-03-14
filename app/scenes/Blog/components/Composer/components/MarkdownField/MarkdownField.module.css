@@ -1,0 +1,9 @@
+.editor-container {
+  border: 1px solid transparent;
+}
+
+.error {
+  color: #f44336;
+  font-size: 13px;
+  margin-top: 6px;
+}

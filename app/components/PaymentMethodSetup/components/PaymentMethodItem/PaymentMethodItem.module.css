@@ -1,0 +1,145 @@
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  background: rgba(255, 255, 255, 0.3);
+  display: none;
+}
+
+.overlay svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px !important;
+  height: 48px !important;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 600px) {
+  .overlay {
+    display: block;
+  }
+
+  .container:hover .icon,
+  .container:hover .title,
+  .container:hover .text,
+  .container:hover .action {
+    filter: blur(1px);
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+    border-color: #2ECB80;
+  }
+
+  .container:hover .overlay svg {
+    animation: overlay-icon-appear 0.4s cubic-bezier(0.6, 0, 0, 1);
+  }
+}
+
+@keyframes overlay-icon-appear {
+  from { transform: translate(-50%, -50%) scale(0); }
+  to { transform: translate(-50%, -50%) scale(1); }
+}
+
+.iconWrapper {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  padding: 24px;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 2px solid #E0E9F2;
+  border-radius: 9999px;
+}
+
+.icon svg, .icon img {
+  height: 48px !important;
+}
+
+.icon svg {
+  width: 48px !important;
+}
+
+.icon svg {
+  fill: #8CA4BA !important;
+}
+
+.title {
+  margin-bottom: 12px;
+  text-align: center;
+  color: #666F80;
+}
+
+.text {
+  margin-bottom: 24px;
+  text-align: center;
+  color: #666F80;
+}
+
+.action {
+  margin-top: auto;
+  text-align: center;
+}
+
+.icon,
+.title,
+.text,
+.action {
+  transition: filter 0.2s ease;
+}
+
+.container.disabled {
+  cursor: not-allowed;
+}
+
+.container.disabled * {
+  pointer-events: none;
+  filter: none !important;
+}
+
+.container.disabled .icon,
+.container.disabled .title {
+  opacity: 0.4;
+}
+
+.container.disabled .text {
+  opacity: 0.5;
+}
+
+.container.pending:hover .icon,
+.container.pending:hover .title,
+.container.pending:hover .text,
+.container.pending:hover .action {
+  filter: blur(0px);
+}

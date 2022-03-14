@@ -1,0 +1,54 @@
+.badge-area {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  padding: 12px 0 0 24px;
+  text-align: left;
+}
+
+.wrapper > * {
+  margin: 12px 0;
+}
+
+.error {
+  display: block;
+  font-size: 14px;
+  margin-top: -6px;
+  color: rgb(244, 67, 54);
+}
+
+.status-icon {
+  margin-right: 6px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+
+.verified {
+  color: rgb(0, 165, 0);
+  vertical-align: middle;
+  animation: name-type-appear 0.5s ease-out 0.55s;
+  animation-fill-mode: backwards;
+}
+
+@media (min-width: 701px) {
+  .badge-area {
+    top: 72px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .badge-area {
+    top: 96px;
+  }
+}
+
+@media (max-width: 500px) {
+  .badge-area {
+    padding: 0;
+    text-align: center;
+  }
+}

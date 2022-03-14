@@ -1,0 +1,48 @@
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.logo-container {
+  margin-bottom: 21px;
+}
+
+.logo-wrapper {
+  display: inline-block;
+}
+
+.logo {
+  max-height: 96px;
+  max-width: 320px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin: 24px 0;
+}
+
+.subtitle-not-alternative {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.avatar {
+  background-color: transparent !important;
+  color: #0033cc !important;
+  font-weight: 500 !important;
+  border-radius: 9999px !important;
+  width: auto !important;
+  min-width: 48px !important;
+}
+
+.avatar img {
+  min-height: 48px !important;
+  min-width: 48px !important;
+  width: auto !important;
+  margin: 3px !important;
+}
+
+.link {
+  padding: 12px;
+  text-align: center;
+}

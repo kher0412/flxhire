@@ -1,0 +1,36 @@
+.container {
+  transition: margin 0.4s ease;
+}
+
+.input-wrapper {
+  margin-top: 4px;
+}
+
+.placeholder {
+  opacity: 0.6;
+  line-height: 36px;
+  margin-right: 9px;
+}
+
+.icon-button {
+  margin-top: -6px !important;
+  margin-bottom: -6px !important;
+  margin-left: 0px !important;
+  vertical-align: top !important;
+}
+
+.text {
+  margin-bottom: 18px !important;
+}
+
+.subtypes {
+  margin-top: 18px;
+}
+
+.experience {
+  padding: 12px 0;
+}
+
+.slider {
+  padding: 0 6px;
+}

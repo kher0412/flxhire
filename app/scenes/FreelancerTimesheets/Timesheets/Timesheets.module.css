@@ -1,0 +1,75 @@
+.button-icon {
+  margin-right: 12px !important;
+  color: #fff !important;
+}
+
+.header svg.button-icon {
+  fill: #fff !important;
+}
+
+.new-timesheet-button-container {
+  margin-top: 12px;
+  text-align: right;
+  animation: new-timesheet-button-appear 0.3s ease;
+}
+
+@keyframes new-timesheet-button-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.stats-card {
+  animation: stat-card-appear 0.5s cubic-bezier(0.8, 0, 0, 1);
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+}
+
+.stats-card:nth-of-type(1) {
+  animation-delay: 0ms;
+}
+
+.stats-card:nth-of-type(2) {
+  animation-delay: 150ms;
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    display: none !important;
+  }
+}
+
+@keyframes stat-card-appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.separator {
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  margin: 24px auto;
+  animation: separator-appear 0.5s ease;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes separator-appear {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}

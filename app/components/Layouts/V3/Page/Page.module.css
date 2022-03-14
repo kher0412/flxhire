@@ -1,0 +1,8 @@
+.container {
+  min-height: calc(100vh - 100px); /* this roughly makes all pages come out right */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background: #F3F7FB;
+}

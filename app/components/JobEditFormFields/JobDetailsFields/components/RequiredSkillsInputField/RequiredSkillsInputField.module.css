@@ -1,0 +1,7 @@
+.button {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border: 2px solid #E0E9F2 !important;
+  border-left: none !important;
+  height: 51px !important;
+}

@@ -1,0 +1,12 @@
+.container {
+  padding: 24px;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.container strong {
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 6px;
+}

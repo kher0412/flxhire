@@ -1,0 +1,37 @@
+.actions {
+  color: #fff;
+  margin-top: 12px;
+  margin-left: 18px;
+  margin-right: 18px;
+  animation: appear 0.4s ease-out backwards;
+  animation-delay: 400ms;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.actions.wrap {
+  justify-content: space-evenly;
+}
+
+.actions > * {
+  margin-right: 12px;
+}
+
+.actions-not-alternative * {
+  color: #fff !important;
+}
+
+.actions *:disabled {
+  opacity: 0.5 !important;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 700px) {
+  .actions {
+    margin-top: 6px;
+  }
+}

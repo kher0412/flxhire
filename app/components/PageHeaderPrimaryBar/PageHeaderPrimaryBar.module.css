@@ -1,0 +1,18 @@
+.card {
+  margin: 24px auto 12px auto;
+  max-width: calc(100vw - 22px);
+  min-height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  animation: appear 0.4s ease-out backwards;
+  animation-delay: 250ms;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

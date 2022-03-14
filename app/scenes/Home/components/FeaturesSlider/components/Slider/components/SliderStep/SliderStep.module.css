@@ -1,0 +1,39 @@
+.container {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -60px;
+  position: absolute;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background 1s ease, transform 1s cubic-bezier(0.6, 0, 0, 1), border-color 0.2s ease;
+}
+
+.container:hover {
+  border-color: #2ECB80;
+}
+
+.container path {
+  fill: #2ECB80 !important;
+  transition: fill 1s cubic-bezier(0.6, 0, 0, 1);
+}
+
+.container.selected {
+  background: #2ECB80;
+}
+
+.container.selected path {
+  fill: #fff !important;
+}
+
+.container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}

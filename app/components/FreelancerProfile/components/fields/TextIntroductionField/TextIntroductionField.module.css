@@ -1,0 +1,65 @@
+.container {
+  text-align: center;
+  font-size: 16px;
+  color: #8E97A3;
+  line-height: 1.5em;
+  position: relative;
+}
+
+.text {
+  font-size: 16px;
+  display: inline-block;
+  animation: text-introduction-appear 1s ease;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+  margin: 0 -4px auto;
+  position: relative;
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 12px 0;
+  }
+
+  .text {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 0 !important;
+  }
+}
+
+.placeholder {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.error {
+  color: rgb(244, 67, 54);
+  margin-left: 5px;
+}
+
+.edit {
+  position: absolute;
+  right: -24px;
+  top: calc(50% - 24px);
+}
+
+.textarea {
+  font-size: 15px;
+  animation: textarea-appear 0.2s ease-out 0.2s backwards;
+}
+
+@keyframes textarea-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textareaWrapper {
+  overflow: hidden;
+}

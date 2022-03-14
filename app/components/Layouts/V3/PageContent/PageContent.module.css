@@ -1,0 +1,14 @@
+.container {
+  flex-grow: 1;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 48px;
+  transition: max-width 0.4s ease;
+  width: 100%;
+  min-width: 0;
+}
+
+.container,
+.box {
+  min-height: calc(100vh - 100px); /* this roughly makes all pages come out right */
+}

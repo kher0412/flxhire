@@ -1,0 +1,16 @@
+.expand {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 12px !important;
+  margin-top: -6px !important;
+}
+
+.expanded {
+  transform: rotate(180deg);
+}
+
+.chip {
+  position: absolute !important;
+  top: 20px;
+  right: 6px;
+}

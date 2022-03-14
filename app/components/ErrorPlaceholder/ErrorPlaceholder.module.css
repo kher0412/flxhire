@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  margin: 15% auto;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.icon {
+  margin: 24px 0;
+}
+
+.icon > * {
+  height: 48px !important;
+  width: 48px !important;
+  opacity: 0.5;
+}

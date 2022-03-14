@@ -1,0 +1,28 @@
+.container {
+  display: block;
+  width: 100%;
+}
+
+.container a {
+  text-decoration: none
+}
+
+.logo {
+  width: 200px;
+  height: 20px;
+  max-width: 100%;
+}
+
+@media (max-width: 940px) {
+  .logo {
+    height: 11px;
+    display: flex;
+  }
+}
+
+.sidebarLogo {
+  width: 164px;
+  height: 16px;
+  max-width: 100%;
+  display: flex;
+}

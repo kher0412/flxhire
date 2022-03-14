@@ -1,0 +1,25 @@
+.actions {
+  flex: 0 0 100%;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-basis: 100%;
+  padding: 12px !important;
+  box-sizing: border-box;
+  order: 5;
+  border-top: 1px solid #E0E9F2;
+}
+
+.divider {
+  margin-top: 18px !important;
+}
+
+@media (max-width: 800px) {
+  .actions {
+    border-top: none;
+    margin-top: 0;
+  }
+
+  .divider {
+    display: none;
+  }
+}
